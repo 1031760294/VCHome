@@ -17,6 +17,17 @@
 		9AB13BDD1CC20F6A001B8869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB13BDB1CC20F6A001B8869 /* LaunchScreen.storyboard */; };
 		9AB13BE81CC20F6A001B8869 /* VCHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BE71CC20F6A001B8869 /* VCHomeTests.m */; };
 		9AB13BF31CC20F6A001B8869 /* VCHomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BF21CC20F6A001B8869 /* VCHomeUITests.m */; };
+		9AB13C0A1CC21EB7001B8869 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13C071CC21EB7001B8869 /* StorageMgr.m */; };
+		9AB13C0B1CC21EB7001B8869 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13C091CC21EB7001B8869 /* Utilities.m */; };
+		9AB13C131CC2202A001B8869 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C121CC2202A001B8869 /* AudioToolbox.framework */; };
+		9AB13C151CC2203B001B8869 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C141CC2203B001B8869 /* SystemConfiguration.framework */; };
+		9AB13C171CC22051001B8869 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C161CC22051001B8869 /* libsqlite3.tbd */; };
+		9AB13C191CC220EF001B8869 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C181CC220EF001B8869 /* Social.framework */; };
+		9AB13C1B1CC220FB001B8869 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C1A1CC220FB001B8869 /* Accounts.framework */; };
+		9AB13C1D1CC2210C001B8869 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C1C1CC2210C001B8869 /* CoreLocation.framework */; };
+		9AB13C1F1CC22117001B8869 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C1E1CC22117001B8869 /* StoreKit.framework */; };
+		9AB13C211CC222C7001B8869 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C201CC222C7001B8869 /* Bolts.framework */; };
+		9AB13C231CC222D2001B8869 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C221CC222D2001B8869 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +68,21 @@
 		9AB13BEE1CC20F6A001B8869 /* VCHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB13BF21CC20F6A001B8869 /* VCHomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCHomeUITests.m; sourceTree = "<group>"; };
 		9AB13BF41CC20F6A001B8869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB13C061CC21EB7001B8869 /* StorageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageMgr.h; sourceTree = "<group>"; };
+		9AB13C071CC21EB7001B8869 /* StorageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageMgr.m; sourceTree = "<group>"; };
+		9AB13C081CC21EB7001B8869 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		9AB13C091CC21EB7001B8869 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		9AB13C0C1CC21ECE001B8869 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9AB13C0D1CC21F10001B8869 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9AB13C121CC2202A001B8869 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9AB13C141CC2203B001B8869 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9AB13C161CC22051001B8869 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9AB13C181CC220EF001B8869 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9AB13C1A1CC220FB001B8869 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		9AB13C1C1CC2210C001B8869 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9AB13C1E1CC22117001B8869 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9AB13C201CC222C7001B8869 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = VCHome/Bolts.framework; sourceTree = "<group>"; };
+		9AB13C221CC222D2001B8869 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = VCHome/Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +90,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB13C231CC222D2001B8869 /* Parse.framework in Frameworks */,
+				9AB13C211CC222C7001B8869 /* Bolts.framework in Frameworks */,
+				9AB13C1F1CC22117001B8869 /* StoreKit.framework in Frameworks */,
+				9AB13C1D1CC2210C001B8869 /* CoreLocation.framework in Frameworks */,
+				9AB13C1B1CC220FB001B8869 /* Accounts.framework in Frameworks */,
+				9AB13C191CC220EF001B8869 /* Social.framework in Frameworks */,
+				9AB13C171CC22051001B8869 /* libsqlite3.tbd in Frameworks */,
+				9AB13C151CC2203B001B8869 /* SystemConfiguration.framework in Frameworks */,
+				9AB13C131CC2202A001B8869 /* AudioToolbox.framework in Frameworks */,
 				4ED47A4090D5062C518823B3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +123,15 @@
 		99F508CC2027A9E29DB4DE13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AB13C221CC222D2001B8869 /* Parse.framework */,
+				9AB13C201CC222C7001B8869 /* Bolts.framework */,
+				9AB13C1E1CC22117001B8869 /* StoreKit.framework */,
+				9AB13C1C1CC2210C001B8869 /* CoreLocation.framework */,
+				9AB13C1A1CC220FB001B8869 /* Accounts.framework */,
+				9AB13C181CC220EF001B8869 /* Social.framework */,
+				9AB13C161CC22051001B8869 /* libsqlite3.tbd */,
+				9AB13C141CC2203B001B8869 /* SystemConfiguration.framework */,
+				9AB13C121CC2202A001B8869 /* AudioToolbox.framework */,
 				3A6BDCDEBEC010026246D599 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -118,15 +162,12 @@
 		9AB13BC91CC20F6A001B8869 /* VCHome */ = {
 			isa = PBXGroup;
 			children = (
-				9AB13BCD1CC20F6A001B8869 /* AppDelegate.h */,
-				9AB13BCE1CC20F6A001B8869 /* AppDelegate.m */,
-				9AB13BD01CC20F6A001B8869 /* ViewController.h */,
-				9AB13BD11CC20F6A001B8869 /* ViewController.m */,
-				9AB13BD31CC20F6A001B8869 /* Main.storyboard */,
-				9AB13BD91CC20F6A001B8869 /* Assets.xcassets */,
-				9AB13BDB1CC20F6A001B8869 /* LaunchScreen.storyboard */,
-				9AB13BDE1CC20F6A001B8869 /* Info.plist */,
-				9AB13BD61CC20F6A001B8869 /* VCHome.xcdatamodeld */,
+				9AB13C051CC21DFA001B8869 /* Controller */,
+				9AB13C041CC21DE1001B8869 /* Utility */,
+				9AB13C031CC21DD8001B8869 /* 3rd */,
+				9AB13C021CC21DC6001B8869 /* Constant */,
+				9AB13C011CC21DB8001B8869 /* Model */,
+				9AB13C001CC21D94001B8869 /* View */,
 				9AB13BCA1CC20F6A001B8869 /* Supporting Files */,
 			);
 			path = VCHome;
@@ -135,7 +176,11 @@
 		9AB13BCA1CC20F6A001B8869 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9AB13BDE1CC20F6A001B8869 /* Info.plist */,
+				9AB13BCD1CC20F6A001B8869 /* AppDelegate.h */,
+				9AB13BCE1CC20F6A001B8869 /* AppDelegate.m */,
 				9AB13BCB1CC20F6A001B8869 /* main.m */,
+				9AB13C0D1CC21F10001B8869 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,6 +201,59 @@
 				9AB13BF41CC20F6A001B8869 /* Info.plist */,
 			);
 			path = VCHomeUITests;
+			sourceTree = "<group>";
+		};
+		9AB13C001CC21D94001B8869 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AB13BD31CC20F6A001B8869 /* Main.storyboard */,
+				9AB13BD91CC20F6A001B8869 /* Assets.xcassets */,
+				9AB13BDB1CC20F6A001B8869 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9AB13C011CC21DB8001B8869 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AB13BD61CC20F6A001B8869 /* VCHome.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9AB13C021CC21DC6001B8869 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				9AB13C0C1CC21ECE001B8869 /* Constants.h */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		9AB13C031CC21DD8001B8869 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		9AB13C041CC21DE1001B8869 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9AB13C061CC21EB7001B8869 /* StorageMgr.h */,
+				9AB13C071CC21EB7001B8869 /* StorageMgr.m */,
+				9AB13C081CC21EB7001B8869 /* Utilities.h */,
+				9AB13C091CC21EB7001B8869 /* Utilities.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		9AB13C051CC21DFA001B8869 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AB13BD01CC20F6A001B8869 /* ViewController.h */,
+				9AB13BD11CC20F6A001B8869 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		D312BC92C67EDC1866F72071 /* Pods */ = {
@@ -348,10 +446,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB13C0B1CC21EB7001B8869 /* Utilities.m in Sources */,
 				9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */,
 				9AB13BD81CC20F6A001B8869 /* VCHome.xcdatamodeld in Sources */,
 				9AB13BCF1CC20F6A001B8869 /* AppDelegate.m in Sources */,
 				9AB13BCC1CC20F6A001B8869 /* main.m in Sources */,
+				9AB13C0A1CC21EB7001B8869 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +591,10 @@
 			baseConfigurationReference = 22A536F5BBE9FD4F85461942 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VCHome",
+				);
 				INFOPLIST_FILE = VCHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vch.VCHome;
@@ -503,6 +607,10 @@
 			baseConfigurationReference = 17F7BD40296FD1A25AE44602 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VCHome",
+				);
 				INFOPLIST_FILE = VCHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vch.VCHome;
