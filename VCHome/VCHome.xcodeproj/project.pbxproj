@@ -614,6 +614,7 @@
 					"$(PROJECT_DIR)/VCHome",
 				);
 				INFOPLIST_FILE = VCHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vch.VCHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -630,6 +631,7 @@
 					"$(PROJECT_DIR)/VCHome",
 				);
 				INFOPLIST_FILE = VCHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vch.VCHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
