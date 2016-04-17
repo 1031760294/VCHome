@@ -11,10 +11,12 @@
 		506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D11CC2524700BF3CA9 /* SignInViewController.m */; };
 		506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D71CC252C800BF3CA9 /* SignUpViewController.m */; };
 		506337DB1CC2531700BF3CA9 /* ForgetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337DA1CC2531700BF3CA9 /* ForgetPwdViewController.m */; };
+		9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D3D3E1CC32F610014D6C4 /* AppAPIClient.m */; };
+		9A5D3D421CC32F610014D6C4 /* RequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D3D401CC32F610014D6C4 /* RequestAPI.m */; };
+		9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5D3D431CC34AE10014D6C4 /* Main.storyboard */; };
 		9AB13BCC1CC20F6A001B8869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BCB1CC20F6A001B8869 /* main.m */; };
 		9AB13BCF1CC20F6A001B8869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BCE1CC20F6A001B8869 /* AppDelegate.m */; };
 		9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BD11CC20F6A001B8869 /* ViewController.m */; };
-		9AB13BD51CC20F6A001B8869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB13BD31CC20F6A001B8869 /* Main.storyboard */; };
 		9AB13BD81CC20F6A001B8869 /* VCHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BD61CC20F6A001B8869 /* VCHome.xcdatamodeld */; };
 		9AB13BDA1CC20F6A001B8869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB13BD91CC20F6A001B8869 /* Assets.xcassets */; };
 		9AB13BDD1CC20F6A001B8869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB13BDB1CC20F6A001B8869 /* LaunchScreen.storyboard */; };
@@ -60,13 +62,17 @@
 		506337D71CC252C800BF3CA9 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		506337D91CC2531700BF3CA9 /* ForgetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPwdViewController.h; sourceTree = "<group>"; };
 		506337DA1CC2531700BF3CA9 /* ForgetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPwdViewController.m; sourceTree = "<group>"; };
+		9A5D3D3D1CC32F610014D6C4 /* AppAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPIClient.h; sourceTree = "<group>"; };
+		9A5D3D3E1CC32F610014D6C4 /* AppAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAPIClient.m; sourceTree = "<group>"; };
+		9A5D3D3F1CC32F610014D6C4 /* RequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPI.h; sourceTree = "<group>"; };
+		9A5D3D401CC32F610014D6C4 /* RequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestAPI.m; sourceTree = "<group>"; };
+		9A5D3D431CC34AE10014D6C4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9AB13BC71CC20F6A001B8869 /* VCHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB13BCB1CC20F6A001B8869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AB13BCD1CC20F6A001B8869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AB13BCE1CC20F6A001B8869 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9AB13BD01CC20F6A001B8869 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9AB13BD11CC20F6A001B8869 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9AB13BD41CC20F6A001B8869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB13BD71CC20F6A001B8869 /* VCHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VCHome.xcdatamodel; sourceTree = "<group>"; };
 		9AB13BD91CC20F6A001B8869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB13BDC1CC20F6A001B8869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -215,7 +221,7 @@
 		9AB13C001CC21D94001B8869 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9AB13BD31CC20F6A001B8869 /* Main.storyboard */,
+				9A5D3D431CC34AE10014D6C4 /* Main.storyboard */,
 				9AB13BD91CC20F6A001B8869 /* Assets.xcassets */,
 				9AB13BDB1CC20F6A001B8869 /* LaunchScreen.storyboard */,
 			);
@@ -248,6 +254,10 @@
 		9AB13C041CC21DE1001B8869 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				9A5D3D3D1CC32F610014D6C4 /* AppAPIClient.h */,
+				9A5D3D3E1CC32F610014D6C4 /* AppAPIClient.m */,
+				9A5D3D3F1CC32F610014D6C4 /* RequestAPI.h */,
+				9A5D3D401CC32F610014D6C4 /* RequestAPI.m */,
 				9AB13C061CC21EB7001B8869 /* StorageMgr.h */,
 				9AB13C071CC21EB7001B8869 /* StorageMgr.m */,
 				9AB13C081CC21EB7001B8869 /* Utilities.h */,
@@ -386,9 +396,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */,
 				9AB13BDD1CC20F6A001B8869 /* LaunchScreen.storyboard in Resources */,
 				9AB13BDA1CC20F6A001B8869 /* Assets.xcassets in Resources */,
-				9AB13BD51CC20F6A001B8869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,11 +472,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				506337DB1CC2531700BF3CA9 /* ForgetPwdViewController.m in Sources */,
+				9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */,
 				506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */,
 				9AB13C0B1CC21EB7001B8869 /* Utilities.m in Sources */,
 				9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */,
 				9AB13BD81CC20F6A001B8869 /* VCHome.xcdatamodeld in Sources */,
 				9AB13BCF1CC20F6A001B8869 /* AppDelegate.m in Sources */,
+				9A5D3D421CC32F610014D6C4 /* RequestAPI.m in Sources */,
 				9AB13BCC1CC20F6A001B8869 /* main.m in Sources */,
 				506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */,
 				9AB13C0A1CC21EB7001B8869 /* StorageMgr.m in Sources */,
@@ -505,14 +517,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9AB13BD31CC20F6A001B8869 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AB13BD41CC20F6A001B8869 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9AB13BDB1CC20F6A001B8869 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -613,6 +617,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/VCHome",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VCHome/PrefixHeader.pch;
 				INFOPLIST_FILE = VCHome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -630,6 +636,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/VCHome",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VCHome/PrefixHeader.pch;
 				INFOPLIST_FILE = VCHome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
