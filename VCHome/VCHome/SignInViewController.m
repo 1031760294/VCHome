@@ -9,8 +9,13 @@
 #import "SignInViewController.h"
 #import "SignUpViewController.h"
 #import "ForgetPwdViewController.h"
-@interface SignInViewController ()
+#import "TabViewController.h"
+#import "LeftViewController.h"
+#import <ECSlidingViewController/ECSlidingViewController.h>
 
+
+@interface SignInViewController ()
+@property (strong,nonatomic) ECSlidingViewController * slidingVC;
 @end
 
 @implementation SignInViewController
@@ -61,6 +66,52 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)popUpHome{
+    //根据故事板和故事板中页面的名称获得这个页面
+    TabViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Tab"];
+//    //初始化移门的门框
+//    _slidingVC = [ECSlidingViewController slidingWithTopViewController:tabVC];
+//    //设置开门关门的耗时
+//    _slidingVC.defaultTransitionDuration = 0.25f;
+//    //设置移门开关的手势(触摸和拖拽)
+//    _slidingVC.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGestureTapping | ECSlidingViewControllerAnchoredGesturePanning;
+//    //设置上述手势的时间范围
+//    [tabVC.view addGestureRecognizer:_slidingVC.panGesture];
+//    //根据故事板中的名字获得左划页面的实列
+//    LeftViewController *leftVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Left"];
+//    //设置移门靠左的那扇门
+//    _slidingVC.underLeftViewController =leftVC;
+//    //设置移门的开闭程度
+//    _slidingVC.anchorRightPeekAmount =UI_SCREEN_W /4;
+//    //创建一个菜单按钮被按时的通知
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuSwitchAction) name:@"MenuSwitch" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableGestureAction) name:@"EnableGesture" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableGestureAction) name:@"DisableGesture" object:nil];
+
+    //modal方式跳转到上述页面
+    [self presentViewController:tabVC animated:YES completion:nil];
+}
+////关闭移门手势
+//-(void)disableGestureAction{
+//    _slidingVC.panGesture.enabled =NO;
+//}
+////激活移门手势
+//-(void)enableGestureAction{
+//    _slidingVC.panGesture.enabled =YES;
+//}
+//-(void)menuSwitchAction{
+//    NSLog(@"菜单");
+//    if (_slidingVC.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredRight)
+//    {
+//        //上述条件表示中间那扇门正移在右侧,说明门是打开的,因此我们需要将它关闭,也就是将中间的门移回中间
+//        [_slidingVC resetTopViewAnimated:YES];
+//    }
+//    else
+//    {
+//        //反之将中间的门移到右边
+//        [_slidingVC anchorTopViewToRightAnimated:YES];
+//    }
+//}
 
 -(void)signInWithUsername:(NSString *)username andPassword:(NSString *)password{
     UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
@@ -75,7 +126,7 @@
             //将密码文本输入框中的内容清除
             _password.text = @"";
             //跳转到首页
-            //[self popUpHome];
+            [self popUpHome];
         }
         else {
             switch (error.code) {
