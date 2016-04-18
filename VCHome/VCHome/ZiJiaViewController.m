@@ -33,5 +33,34 @@
     // Pass the selected object to the new view controller.
 }
 */
+//每次页面出现后
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"EnableGesture" object:nil];
+}
+//每次页面消失后
+- (void) viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"DisableGesture" object:nil];
+}
 
+
+- (IBAction)logOut:(UIButton *)sender forEvent:(UIEvent *)event {
+    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
+        //判断退出是否成功
+        if (!error) {
+            //返回登录页面
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }else{
+            [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
+        }
+    }];
+
+}
+
+- (IBAction)menuAction:(UIBarButtonItem *)sender {
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"MenuSwitch" object:nil];
+}
 @end

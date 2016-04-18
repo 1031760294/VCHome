@@ -12,7 +12,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 - (IBAction)loginAction:(UIButton *)sender forEvent:(UIEvent *)event;
-- (IBAction)ForgetPwd:(UIButton *)sender forEvent:(UIEvent *)event;
-- (IBAction)Regirsta:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end

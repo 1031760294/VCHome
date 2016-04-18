@@ -293,10 +293,10 @@
 				9A7821FD1CC4768900A1F79B /* TabViewController.m */,
 				9A7821FF1CC4780B00A1F79B /* LeftViewController.h */,
 				9A7822001CC4780B00A1F79B /* LeftViewController.m */,
-				9A7822021CC4795E00A1F79B /* ZhuanCheViewController.h */,
-				9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */,
 				9A7822051CC4797900A1F79B /* ZiJiaViewController.h */,
 				9A7822061CC4797900A1F79B /* ZiJiaViewController.m */,
+				9A7822021CC4795E00A1F79B /* ZhuanCheViewController.h */,
+				9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
