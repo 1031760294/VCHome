@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15AF4F171CC5C65100ABC6CB /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AF4F141CC5C65100ABC6CB /* Banner.m */; };
+		15AF4F181CC5C65100ABC6CB /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AF4F161CC5C65100ABC6CB /* Timer.m */; };
 		4ED47A4090D5062C518823B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6BDCDEBEC010026246D599 /* libPods.a */; };
 		506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D11CC2524700BF3CA9 /* SignInViewController.m */; };
 		506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D71CC252C800BF3CA9 /* SignUpViewController.m */; };
@@ -58,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15AF4F131CC5C65100ABC6CB /* Banner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner.h; sourceTree = "<group>"; };
+		15AF4F141CC5C65100ABC6CB /* Banner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner.m; sourceTree = "<group>"; };
+		15AF4F151CC5C65100ABC6CB /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		15AF4F161CC5C65100ABC6CB /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		17F7BD40296FD1A25AE44602 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		22A536F5BBE9FD4F85461942 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3A6BDCDEBEC010026246D599 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +156,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15AF4F121CC5C5FC00ABC6CB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				15AF4F131CC5C65100ABC6CB /* Banner.h */,
+				15AF4F141CC5C65100ABC6CB /* Banner.m */,
+				15AF4F151CC5C65100ABC6CB /* Timer.h */,
+				15AF4F161CC5C65100ABC6CB /* Timer.m */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		99F508CC2027A9E29DB4DE13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +303,7 @@
 		9AB13C051CC21DFA001B8869 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				15AF4F121CC5C5FC00ABC6CB /* Framework */,
 				9AB13BD01CC20F6A001B8869 /* ViewController.h */,
 				9AB13BD11CC20F6A001B8869 /* ViewController.m */,
 				506337D01CC2524700BF3CA9 /* SignInViewController.h */,
@@ -511,6 +529,8 @@
 				506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */,
 				9A7822011CC4780B00A1F79B /* LeftViewController.m in Sources */,
 				9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */,
+				15AF4F181CC5C65100ABC6CB /* Timer.m in Sources */,
+				15AF4F171CC5C65100ABC6CB /* Banner.m in Sources */,
 				9AB13C0A1CC21EB7001B8869 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

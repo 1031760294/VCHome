@@ -7,8 +7,8 @@
 //
 
 #import "ZiJiaViewController.h"
-
-@interface ZiJiaViewController ()
+#import "Banner.h"
+@interface ZiJiaViewController ()<BannerDataSource,BannerDelegate>
 
 @end
 
@@ -16,6 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CGSize size = [UIScreen mainScreen].bounds.size;
+    
+    Banner *bv = [[Banner alloc]init];
+    bv.frame = CGRectMake(0, 135, size.width, 208);
+    bv.bannerDelegate = self;
+    bv.dataSource = self;
+    [bv startPlay];
+    [self.view addSubview:bv];
+    
     // Do any additional setup after loading the view.
     // 平时工作需要有个下拉菜单所以简单的封装了一个菜单功能很简单也没有优化可为大家做一个参考,以下是demo
     
@@ -63,6 +72,24 @@
     
     
 }
+
+//  点击图片
+- (void)bannerView:(Banner *)bannerView didSelectImageAtIndex:(NSUInteger)index
+{
+    
+}
+//  图片数量
+- (NSUInteger)numberOfItemsInBanner:(Banner *)Banner
+{
+    return 4;
+}
+
+//  图片资源
+- (UIImage *)bannerView:(Banner *)bannerView imageInIndex:(NSUInteger)index {
+    NSArray *ary = @[[UIImage imageNamed:@"1"], [UIImage imageNamed:@"2"], [UIImage imageNamed:@"3"],[UIImage imageNamed:@"4"]];
+    return ary[index];
+}
+
 - (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex{
     NSLog(@"菜单数:%ld 子菜单数:%ld",MenuIndex,DetailIndex);
 }
