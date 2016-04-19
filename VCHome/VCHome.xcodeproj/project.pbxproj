@@ -37,6 +37,7 @@
 		9AB13C1F1CC22117001B8869 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C1E1CC22117001B8869 /* StoreKit.framework */; };
 		9AB13C211CC222C7001B8869 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C201CC222C7001B8869 /* Bolts.framework */; };
 		9AB13C231CC222D2001B8869 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C221CC222D2001B8869 /* Parse.framework */; };
+		9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,8 @@
 		9AB13C1E1CC22117001B8869 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9AB13C201CC222C7001B8869 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = VCHome/Bolts.framework; sourceTree = "<group>"; };
 		9AB13C221CC222D2001B8869 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = VCHome/Parse.framework; sourceTree = "<group>"; };
+		9AE03C241CC5BFC50027801F /* WJDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDropdownMenu.h; sourceTree = "<group>"; };
+		9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDropdownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +254,8 @@
 		9AB13C021CC21DC6001B8869 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				9AE03C241CC5BFC50027801F /* WJDropdownMenu.h */,
+				9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */,
 				9AB13C0C1CC21ECE001B8869 /* Constants.h */,
 			);
 			name = Constant;
@@ -505,6 +510,7 @@
 				9A7822041CC4795E00A1F79B /* ZhuanCheViewController.m in Sources */,
 				506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */,
 				9A7822011CC4780B00A1F79B /* LeftViewController.m in Sources */,
+				9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */,
 				9AB13C0A1CC21EB7001B8869 /* StorageMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -289,22 +289,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0T-kG-KXo">
-                                <rect key="frame" x="151" y="340" width="46" height="30"/>
-                                <state key="normal" title="退出"/>
-                                <connections>
-                                    <action selector="logOut:forEvent:" destination="4tm-uY-4Hf" eventType="touchUpInside" id="VAM-Ur-4iy"/>
-                                </connections>
-                            </button>
+                            <searchBar contentMode="redraw" text="城市选择" translatesAutoresizingMaskIntoConstraints="NO" id="WVk-9F-cJ6">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WVk-9F-cJ6" firstAttribute="leading" secondItem="X9S-N8-HjA" secondAttribute="leading" id="Wsw-qb-K6h"/>
+                            <constraint firstAttribute="trailing" secondItem="WVk-9F-cJ6" secondAttribute="trailing" id="mEu-4I-8dj"/>
+                            <constraint firstItem="WVk-9F-cJ6" firstAttribute="top" secondItem="aCZ-NZ-sda" secondAttribute="bottom" id="pVL-Hu-Mre"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="我的自驾" id="mDe-Zd-rJV">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="GYC-hj-tuB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="GYC-hj-tuB">
                             <connections>
                                 <action selector="menuAction:" destination="4tm-uY-4Hf" id="y29-m9-bcG"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="Bo2-al-Sor"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>

@@ -17,7 +17,57 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // 平时工作需要有个下拉菜单所以简单的封装了一个菜单功能很简单也没有优化可为大家做一个参考,以下是demo
+    
+    // 如果是有导航栏请清除自动适应设置
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    NSArray *threeMenuTitleArray =  @[@"车型",@"价格",@"租期"];
+    
+    
+    //  创建第一个菜单的first数据second数据
+    NSArray *firstArrOne = [NSArray arrayWithObjects:@"奔驰",@"奥迪",@"大众", nil];
+    
+    
+    NSArray *firstMenu = [NSArray arrayWithObject:firstArrOne];
+    
+    
+    
+    
+    //  创建第二个菜单的first数据second数据
+    NSArray *firstArrTwo = [NSArray arrayWithObjects:@"100-500",@"500-1000", nil];
+    NSArray *secondArrTwo = @[@[@"200-300",@"300-400"],@[@"600-750",@"750-900"]];
+    NSArray *secondMenu = [NSArray arrayWithObjects:firstArrTwo,secondArrTwo, nil];
+    
+    //  创建第三个菜单的first数据second数据
+    NSArray *firstArrThree = [NSArray arrayWithObjects:@"自定义",@"一天", nil];
+    NSArray *secondArrThree = @[@[@"一周",@"一个月"],@[@"半天",@"一天半"]];
+    NSArray *threeMenu = [NSArray arrayWithObjects:firstArrThree,secondArrThree, nil];
+    
+    
+    
+    
+    WJDropdownMenu *menu = [[WJDropdownMenu alloc]initWithFrame:CGRectMake(0, 108, 0, 0)];//  size已固定可以随便填已固定
+    menu.caverAnimationTime = 0.2;//  增加了遮盖层动画时间设置 不设置默认是 0.15
+    menu.menuTitleFont = 12;      //  设置menuTitle字体大小 默认不设置是  11
+    menu.tableTitleFont = 11;     //  设置tableTitle字体大小 默认不设置是 10
+    menu.delegate = self;         //  设置代理
+    
+    [self.view addSubview:menu];
+    
+    
+    
+    // 三组菜单调用方法
+    [menu createThreeMenuTitleArray:threeMenuTitleArray FirstArr:firstMenu SecondArr:secondMenu threeArr:threeMenu];
+    
+    
+    
 }
+- (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex{
+    NSLog(@"菜单数:%ld 子菜单数:%ld",MenuIndex,DetailIndex);
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,18 +97,6 @@
 }
 
 
-- (IBAction)logOut:(UIButton *)sender forEvent:(UIEvent *)event {
-    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
-        //判断退出是否成功
-        if (!error) {
-            //返回登录页面
-            [self dismissViewControllerAnimated:YES completion:nil];
-        }else{
-            [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
-        }
-    }];
-
-}
 
 - (IBAction)menuAction:(UIBarButtonItem *)sender {
     [[NSNotificationCenter defaultCenter]postNotificationName:@"MenuSwitch" object:nil];
