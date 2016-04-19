@@ -40,6 +40,13 @@
 		9AB13C211CC222C7001B8869 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C201CC222C7001B8869 /* Bolts.framework */; };
 		9AB13C231CC222D2001B8869 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C221CC222D2001B8869 /* Parse.framework */; };
 		9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */; };
+		9AE03C291CC5D3830027801F /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C281CC5D3830027801F /* ImageTableViewCell.m */; };
+		9AE03C2C1CC621FA0027801F /* CarDeatailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C2B1CC621FA0027801F /* CarDeatailViewController.m */; };
+		9AE03C2F1CC64DAA0027801F /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */; };
+		9AE03C351CC651060027801F /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C311CC651060027801F /* 11.jpg */; };
+		9AE03C361CC651070027801F /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C321CC651060027801F /* 12.jpg */; };
+		9AE03C371CC651070027801F /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C331CC651060027801F /* 13.jpg */; };
+		9AE03C381CC651070027801F /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C341CC651060027801F /* 14.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +126,16 @@
 		9AB13C221CC222D2001B8869 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = VCHome/Parse.framework; sourceTree = "<group>"; };
 		9AE03C241CC5BFC50027801F /* WJDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDropdownMenu.h; sourceTree = "<group>"; };
 		9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDropdownMenu.m; sourceTree = "<group>"; };
+		9AE03C271CC5D3830027801F /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		9AE03C281CC5D3830027801F /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
+		9AE03C2A1CC621FA0027801F /* CarDeatailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDeatailViewController.h; sourceTree = "<group>"; };
+		9AE03C2B1CC621FA0027801F /* CarDeatailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDeatailViewController.m; sourceTree = "<group>"; };
+		9AE03C2D1CC64DA40027801F /* KSGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSGuideManager.h; sourceTree = "<group>"; };
+		9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGuideManager.m; sourceTree = "<group>"; };
+		9AE03C311CC651060027801F /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		9AE03C321CC651060027801F /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		9AE03C331CC651060027801F /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		9AE03C341CC651060027801F /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +298,9 @@
 		9AB13C031CC21DD8001B8869 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				9AE03C301CC650C10027801F /* image */,
+				9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */,
+				9AE03C2D1CC64DA40027801F /* KSGuideManager.h */,
 			);
 			name = 3rd;
 			sourceTree = "<group>";
@@ -320,8 +340,23 @@
 				9A7822061CC4797900A1F79B /* ZiJiaViewController.m */,
 				9A7822021CC4795E00A1F79B /* ZhuanCheViewController.h */,
 				9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */,
+				9AE03C271CC5D3830027801F /* ImageTableViewCell.h */,
+				9AE03C281CC5D3830027801F /* ImageTableViewCell.m */,
+				9AE03C2A1CC621FA0027801F /* CarDeatailViewController.h */,
+				9AE03C2B1CC621FA0027801F /* CarDeatailViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		9AE03C301CC650C10027801F /* image */ = {
+			isa = PBXGroup;
+			children = (
+				9AE03C311CC651060027801F /* 11.jpg */,
+				9AE03C321CC651060027801F /* 12.jpg */,
+				9AE03C331CC651060027801F /* 13.jpg */,
+				9AE03C341CC651060027801F /* 14.jpg */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 		D312BC92C67EDC1866F72071 /* Pods */ = {
@@ -439,9 +474,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE03C361CC651070027801F /* 12.jpg in Resources */,
+				9AE03C371CC651070027801F /* 13.jpg in Resources */,
 				9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */,
+				9AE03C381CC651070027801F /* 14.jpg in Resources */,
 				9AB13BDD1CC20F6A001B8869 /* LaunchScreen.storyboard in Resources */,
 				9AB13BDA1CC20F6A001B8869 /* Assets.xcassets in Resources */,
+				9AE03C351CC651060027801F /* 11.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,14 +559,17 @@
 				9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */,
 				506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */,
 				9AB13C0B1CC21EB7001B8869 /* Utilities.m in Sources */,
+				9AE03C2C1CC621FA0027801F /* CarDeatailViewController.m in Sources */,
 				9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */,
 				9AB13BD81CC20F6A001B8869 /* VCHome.xcdatamodeld in Sources */,
+				9AE03C2F1CC64DAA0027801F /* KSGuideManager.m in Sources */,
 				9AB13BCF1CC20F6A001B8869 /* AppDelegate.m in Sources */,
 				9A5D3D421CC32F610014D6C4 /* RequestAPI.m in Sources */,
 				9AB13BCC1CC20F6A001B8869 /* main.m in Sources */,
 				9A7822041CC4795E00A1F79B /* ZhuanCheViewController.m in Sources */,
 				506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */,
 				9A7822011CC4780B00A1F79B /* LeftViewController.m in Sources */,
+				9AE03C291CC5D3830027801F /* ImageTableViewCell.m in Sources */,
 				9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */,
 				15AF4F181CC5C65100ABC6CB /* Timer.m in Sources */,
 				15AF4F171CC5C65100ABC6CB /* Banner.m in Sources */,

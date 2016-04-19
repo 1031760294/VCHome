@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ZiJiaViewController : UIViewController
-- (IBAction)logOut:(UIButton *)sender forEvent:(UIEvent *)event;
+@property (weak ,nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)menuAction:(UIBarButtonItem *)sender;
 
 @end
