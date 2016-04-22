@@ -23,7 +23,9 @@
 
 
 
-@interface WJDropdownMenu ()
+@interface WJDropdownMenu () {
+    NSInteger btnTag;
+}
 
 @property (nonatomic,strong) UIView         *backView;
 @property (nonatomic,strong) UITableView    *tableFirst;
@@ -138,7 +140,7 @@
     
     self.firstTableViewShow = NO;
     [UIView animateWithDuration:0.2 animations:^{
-        self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w/2, 0);
+        self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w, 0);
     }];
     self.secondTableViewShow = NO;
     [UIView animateWithDuration:0.2 animations:^{
@@ -218,7 +220,7 @@
         layer.transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
         
         [UIView animateWithDuration:0.2 animations:^{
-            self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w/2, cell_h*self.dataSourceFirst.count);
+            self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w, cell_h*self.dataSourceFirst.count);
         }];
         
     }else{
@@ -227,7 +229,7 @@
         layer.transform = CATransform3DMakeRotation(M_PI*2, 0, 0, 1);
         self.firstTableViewShow = NO;
         [UIView animateWithDuration:0.2 animations:^{
-            self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w/2, 0);
+            self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w, 0);
         }];
         self.secondTableViewShow = NO;
         [UIView animateWithDuration:0.2 animations:^{
@@ -262,7 +264,7 @@
     
 }
 - (void)showFirstTableView:(UIButton *)btn{
-    
+    btnTag = btn.tag - 100;
     
     if (self.lastSelectedIndex != btn.tag && self.lastSelectedIndex !=-1) {
         CALayer *layer = self.bgLayers[self.lastSelectedIndex-100];
@@ -270,7 +272,7 @@
         
         [UIView animateWithDuration:0.1 animations:^{
             
-            self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w/2, 0);
+            self.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(self.backView.frame), window_w, 0);
             self.tableSecond.frame = CGRectMake(window_w/2, CGRectGetMaxY(self.backView.frame), window_w/2, 0);
             
         }completion:^(BOOL finished) {
@@ -319,7 +321,7 @@
     
     
     
-    self.tableFirst = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.backView.frame),window_w/2, 0) style:UITableViewStylePlain];
+    self.tableFirst = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.backView.frame),window_w, 0) style:UITableViewStylePlain];
     self.tableFirst.scrollEnabled = NO;
     self.tableFirst.delegate = self;
     self.tableFirst.dataSource = self;
@@ -379,7 +381,7 @@
         UIButton *btn = (id)[self viewWithTag:weakSelf.lastSelectedIndex];
         weakSelf.firstTableViewShow = NO;
         [UIView animateWithDuration:0.2 animations:^{
-            weakSelf.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(weakSelf.backView.frame), window_w/2, 0);
+            weakSelf.tableFirst.frame = CGRectMake(0, CGRectGetMaxY(weakSelf.backView.frame), window_w, 0);
         }];
         weakSelf.secondTableViewShow = NO;
         [UIView animateWithDuration:0.2 animations:^{
@@ -388,10 +390,10 @@
         [weakSelf hideCarverView];
         if (weakSelf.allData) {
             [btn setTitle:weakSelf.dataSourceSecond[indexPath.row] forState:UIControlStateNormal];
-            [_delegate menuCellDidSelected:weakSelf.lastSelectedIndex-100 andDetailIndex:indexPath.row];
+            [_delegate menuCellDidSelected:weakSelf.lastSelectedIndex-100 andDetailIndex:indexPath.row andTag:btnTag];
         }else{
             [btn setTitle:weakSelf.dataSourceFirst[indexPath.row] forState:UIControlStateNormal];
-            [_delegate menuCellDidSelected:indexPath.row andDetailIndex:0];
+            [_delegate menuCellDidSelected:indexPath.row andDetailIndex:0 andTag:btnTag];
         }
         
     };

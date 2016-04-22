@@ -10,8 +10,7 @@
 
 @protocol WJMenuDelegate <NSObject>
 
-- (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex;
-
+- (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex andTag:(NSInteger)BtnTag;
 
 @end
 

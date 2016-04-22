@@ -46,7 +46,7 @@
     // 如果是有导航栏请清除自动适应设置
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    NSArray *threeMenuTitleArray =  @[@"车型",@"价格",@"租期"];
+    NSArray *threeMenuTitleArray =  @[@"车型",@"价格",@"排量"];
     
     
     //  创建第一个菜单的first数据second数据
@@ -64,7 +64,7 @@
     NSArray *secondMenu = [NSArray arrayWithObjects:firstArrTwo, nil];
     
     //  创建第三个菜单的first数据second数据
-    NSArray *firstArrThree = [NSArray arrayWithObjects:@"0.5天",@"1天",@"1.5半",@"2天",@"2.5天",@"3天",@"3.5天",@"4天", nil];
+    NSArray *firstArrThree = [NSArray arrayWithObjects:@"1.3L",@"1.4L", @"1.5L",@"1.6L",@"1.8L",@"2.0L", nil];
    // NSArray *secondArrThree = @[@[@"一周",@"一个月"],@[@"半天",@"一天半"]];
     NSArray *threeMenu = [NSArray arrayWithObjects:firstArrThree, nil];
     
@@ -115,8 +115,8 @@
 }
 //菜单栏
 
-- (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex{
-    NSLog(@"菜单数:%ld 子菜单数:%ld",MenuIndex,DetailIndex);
+- (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex andTag:(NSInteger)BtnTag{
+    NSLog(@"按钮号:%ld 菜单数:%ld 子菜单数:%ld",BtnTag,MenuIndex,DetailIndex);
     if (MenuIndex==0&&DetailIndex==0) {
         _i=@"奔驰";
         [self request];
@@ -247,18 +247,6 @@
 
 
 }
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"car"]) {
-//        NSIndexPath *indexPath = _tableView.indexPathForSelectedRow;
-//        //根据上诉行数，获取该行所对应的数据
-//        PFObject *obj = _objectsForShow[indexPath.row];
-//        
-//        CarDeatailViewController  *cdVC = segue.destinationViewController;
-//        cdVC.obj = obj;
-//    }
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     //按钮取消选中
@@ -266,10 +254,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     CarDeatailViewController *date = [Utilities getStoryboardInstance:@"Main" byIdentity:@"car"];
     [self.navigationController pushViewController:date animated:nil];
-    
-    
-    
-    
 }
 
 -(BOOL)textView:(UITableView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(nonnull NSString *)text{
@@ -278,6 +262,11 @@
         //重设键盘初始响应器
         [textView resignFirstResponder];
     }
+    return YES;
+}
+//按return收回键盘
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
     return YES;
 }
 
