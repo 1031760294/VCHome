@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^ReturnCityName)(NSString *cityname);
 @interface ViewController : UIViewController
+@property (nonatomic, copy) ReturnCityName returnBlock;
 
+- (void)returnText:(ReturnCityName)block;
 
 @end
 

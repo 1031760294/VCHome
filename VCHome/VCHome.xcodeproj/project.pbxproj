@@ -34,6 +34,8 @@
 		506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D11CC2524700BF3CA9 /* SignInViewController.m */; };
 		506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D71CC252C800BF3CA9 /* SignUpViewController.m */; };
 		506337DB1CC2531700BF3CA9 /* ForgetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337DA1CC2531700BF3CA9 /* ForgetPwdViewController.m */; };
+		9A2646BD1CCA034400AE4189 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2646BC1CCA034400AE4189 /* MapKit.framework */; };
+		9A2646C01CCA176C00AE4189 /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2646BF1CCA176C00AE4189 /* CarDetailViewController.m */; };
 		9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D3D3E1CC32F610014D6C4 /* AppAPIClient.m */; };
 		9A5D3D421CC32F610014D6C4 /* RequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D3D401CC32F610014D6C4 /* RequestAPI.m */; };
 		9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5D3D431CC34AE10014D6C4 /* Main.storyboard */; };
@@ -62,7 +64,6 @@
 		9AB13C231CC222D2001B8869 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB13C221CC222D2001B8869 /* Parse.framework */; };
 		9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */; };
 		9AE03C291CC5D3830027801F /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C281CC5D3830027801F /* ImageTableViewCell.m */; };
-		9AE03C2C1CC621FA0027801F /* CarDeatailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C2B1CC621FA0027801F /* CarDeatailViewController.m */; };
 		9AE03C2F1CC64DAA0027801F /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */; };
 		9AE03C351CC651060027801F /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C311CC651060027801F /* 11.jpg */; };
 		9AE03C361CC651070027801F /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C321CC651060027801F /* 12.jpg */; };
@@ -140,6 +141,9 @@
 		506337D71CC252C800BF3CA9 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		506337D91CC2531700BF3CA9 /* ForgetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPwdViewController.h; sourceTree = "<group>"; };
 		506337DA1CC2531700BF3CA9 /* ForgetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPwdViewController.m; sourceTree = "<group>"; };
+		9A2646BC1CCA034400AE4189 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9A2646BE1CCA176C00AE4189 /* CarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailViewController.h; sourceTree = "<group>"; };
+		9A2646BF1CCA176C00AE4189 /* CarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailViewController.m; sourceTree = "<group>"; };
 		9A5D3D3D1CC32F610014D6C4 /* AppAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPIClient.h; sourceTree = "<group>"; };
 		9A5D3D3E1CC32F610014D6C4 /* AppAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAPIClient.m; sourceTree = "<group>"; };
 		9A5D3D3F1CC32F610014D6C4 /* RequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPI.h; sourceTree = "<group>"; };
@@ -188,8 +192,6 @@
 		9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDropdownMenu.m; sourceTree = "<group>"; };
 		9AE03C271CC5D3830027801F /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
 		9AE03C281CC5D3830027801F /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
-		9AE03C2A1CC621FA0027801F /* CarDeatailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDeatailViewController.h; sourceTree = "<group>"; };
-		9AE03C2B1CC621FA0027801F /* CarDeatailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDeatailViewController.m; sourceTree = "<group>"; };
 		9AE03C2D1CC64DA40027801F /* KSGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSGuideManager.h; sourceTree = "<group>"; };
 		9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGuideManager.m; sourceTree = "<group>"; };
 		9AE03C311CC651060027801F /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
@@ -203,10 +205,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB13C1D1CC2210C001B8869 /* CoreLocation.framework in Frameworks */,
+				9A2646BD1CCA034400AE4189 /* MapKit.framework in Frameworks */,
 				9AB13C231CC222D2001B8869 /* Parse.framework in Frameworks */,
 				9AB13C211CC222C7001B8869 /* Bolts.framework in Frameworks */,
 				9AB13C1F1CC22117001B8869 /* StoreKit.framework in Frameworks */,
-				9AB13C1D1CC2210C001B8869 /* CoreLocation.framework in Frameworks */,
 				9AB13C1B1CC220FB001B8869 /* Accounts.framework in Frameworks */,
 				9AB13C191CC220EF001B8869 /* Social.framework in Frameworks */,
 				9AB13C171CC22051001B8869 /* libsqlite3.tbd in Frameworks */,
@@ -288,6 +291,7 @@
 		99F508CC2027A9E29DB4DE13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A2646BC1CCA034400AE4189 /* MapKit.framework */,
 				9AB13C221CC222D2001B8869 /* Parse.framework */,
 				9AB13C201CC222C7001B8869 /* Bolts.framework */,
 				9AB13C1E1CC22117001B8869 /* StoreKit.framework */,
@@ -465,8 +469,8 @@
 				9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */,
 				9AE03C271CC5D3830027801F /* ImageTableViewCell.h */,
 				9AE03C281CC5D3830027801F /* ImageTableViewCell.m */,
-				9AE03C2A1CC621FA0027801F /* CarDeatailViewController.h */,
-				9AE03C2B1CC621FA0027801F /* CarDeatailViewController.m */,
+				9A2646BE1CCA176C00AE4189 /* CarDetailViewController.h */,
+				9A2646BF1CCA176C00AE4189 /* CarDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -686,6 +690,7 @@
 				3CFECF141CC9FEAE00BD361D /* PinYinForObjc.m in Sources */,
 				3CFECF131CC9FEAE00BD361D /* PinyinFormatter.m in Sources */,
 				506337DB1CC2531700BF3CA9 /* ForgetPwdViewController.m in Sources */,
+				9A2646C01CCA176C00AE4189 /* CarDetailViewController.m in Sources */,
 				9A7822071CC4797900A1F79B /* ZiJiaViewController.m in Sources */,
 				3CFECF101CC9FEAE00BD361D /* ChineseToPinyinResource.m in Sources */,
 				3CFECEF51CC9FE4300BD361D /* ItemViewCell.m in Sources */,
@@ -693,7 +698,6 @@
 				3CFECEF91CC9FE4300BD361D /* RootViewController.m in Sources */,
 				506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */,
 				9AB13C0B1CC21EB7001B8869 /* Utilities.m in Sources */,
-				9AE03C2C1CC621FA0027801F /* CarDeatailViewController.m in Sources */,
 				3CFECF111CC9FEAE00BD361D /* HanyuPinyinOutputFormat.m in Sources */,
 				9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */,
 				9AB13BD81CC20F6A001B8869 /* VCHome.xcdatamodeld in Sources */,

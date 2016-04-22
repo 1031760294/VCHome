@@ -10,11 +10,16 @@
 #import "ImageTableViewCell.h"
 #import "Banner.h"
 #import "UIImageView+WebCache.h"
-#import "CarDeatailViewController.h"
+#import "CarDetailViewController.h"
 #import "KSGuideManager.h"
+#import "Public.h"
+#import "ViewController.h"
+
 @interface ZiJiaViewController () <BannerDataSource,BannerDelegate,WJMenuDelegate>
 @property(strong,nonatomic)NSMutableArray *objectsForShow;
 @property(strong,nonatomic)NSString *i;
+
+@property(strong, nonatomic)NSString *objId;
 
 @end
 
@@ -22,7 +27,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //定位
+    self.title=@"Welcome";
+    self.navigationController.navigationBar.barTintColor=RGB(44, 166, 248);
+    NSMutableDictionary *titleAttr = [NSMutableDictionary dictionary];
+    titleAttr[NSForegroundColorAttributeName] = [UIColor blackColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:titleAttr];
+
     
     
     
@@ -117,7 +128,7 @@
 
 - (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex andTag:(NSInteger)BtnTag{
     NSLog(@"按钮号:%ld 菜单数:%ld 子菜单数:%ld",BtnTag,MenuIndex,DetailIndex);
-    if (MenuIndex==0&&DetailIndex==0) {
+    if (BtnTag==0&&MenuIndex==0&&DetailIndex==0) {
         _i=@"奔驰";
         [self request];
     }
@@ -170,6 +181,7 @@
     [_objectsForShow removeAllObjects];
     
     PFQuery *query = [PFQuery queryWithClassName:@"Vehicle"];
+    
     //让导航条失去交互能力
     self.navigationController.view.userInteractionEnabled = NO;
     //在根视图上创建一朵菊花，并转动
@@ -182,7 +194,7 @@
         [avi stopAnimating];
         if (!error) {
             _objectsForShow = [NSMutableArray arrayWithArray:objects];
-            NSLog(@"objects = %@",_objectsForShow);
+            NSLog(@"objects = %@",_objectsForShow[0]);
             [_tableView reloadData];
         }else{
             NSLog(@"Error: %@",error.userInfo);
@@ -214,11 +226,12 @@
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
     [cell.Image sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"photos"]];
-    
+//    [StorageMgr ]
 
     return cell;
     
 }
+
 -(void)request{
     [_objectsForShow removeAllObjects];
     
@@ -250,11 +263,28 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     //按钮取消选中
-    
+    PFObject *object = _objectsForShow[indexPath.row];
+//    NSLog(@"--->1%@",object.objectId);
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    CarDeatailViewController *date = [Utilities getStoryboardInstance:@"Main" byIdentity:@"car"];
-    [self.navigationController pushViewController:date animated:nil];
+    CarDetailViewController *date = [Utilities getStoryboardInstance:@"Main" byIdentity:@"car"];
+    
+    date.object = object;
+    [self.navigationController pushViewController:date animated:YES];
 }
+
+- (IBAction)Push:(UIButton *)sender {
+    
+    ViewController *vc=[[ViewController alloc]init];
+    
+    [vc returnText:^(NSString *cityname) {
+        
+        self.citylable.text=cityname;
+    }];
+    
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 -(BOOL)textView:(UITableView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(nonnull NSString *)text{
     //捕捉到return按钮被按下这一事件（return键按钮被按下实际上在文本输入视图中执行换行：／n）
