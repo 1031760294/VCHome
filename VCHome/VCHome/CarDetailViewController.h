@@ -11,7 +11,14 @@
 @interface CarDetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *imageTV;
 @property (weak, nonatomic) IBOutlet UILabel *pingpai;
+@property (weak, nonatomic) IBOutlet UILabel *peizhi;
+@property (weak, nonatomic) IBOutlet UILabel *pailiang;
+@property (weak, nonatomic) IBOutlet UILabel *zuowei;
+@property (weak, nonatomic) IBOutlet UILabel *chepaihao;
+@property (weak, nonatomic) IBOutlet UILabel *zujin;
 
+@property (weak, nonatomic) IBOutlet UILabel *zuqi;
+@property (weak, nonatomic) IBOutlet UILabel *fengge;
 
 @property(strong,nonatomic)PFObject *object;
 

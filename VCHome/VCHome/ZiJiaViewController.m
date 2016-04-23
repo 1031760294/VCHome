@@ -18,7 +18,8 @@
 @interface ZiJiaViewController () <BannerDataSource,BannerDelegate,WJMenuDelegate>
 @property(strong,nonatomic)NSMutableArray *objectsForShow;
 @property(strong,nonatomic)NSString *i;
-
+@property(strong,nonatomic)NSString *j;
+@property(strong,nonatomic)NSString *k;
 @property(strong, nonatomic)NSString *objId;
 
 @end
@@ -130,19 +131,13 @@
     NSLog(@"按钮号:%ld 菜单数:%ld 子菜单数:%ld",BtnTag,MenuIndex,DetailIndex);
     if (BtnTag==0&&MenuIndex==0&&DetailIndex==0) {
         _i=@"奔驰";
-        [self request];
-    }
-    if (MenuIndex==1&&DetailIndex==0) {
-        _i=@"奥迪";
-        [self request];
-    }
-    if (MenuIndex ==2&&DetailIndex ==0) {
-        _i=@"宝马";
-        [self request];
-    }
+
+            [self request];
+        }
+   
+   
+    
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -216,7 +211,7 @@
     NSString *dpm = obj[@"displacement"];
     NSString *randal = obj [@"carRental"];
     NSString *describe = obj [@"describe"];
-    cell.name.text = name;
+    cell.name.text = [NSString stringWithFormat:@"品牌:%@",name];
     cell.dpm.text =[NSString stringWithFormat:@"排量:%@",dpm];
     cell.rental.text = [NSString stringWithFormat:@"日租:%@",randal];
     cell.describe.text =describe;
