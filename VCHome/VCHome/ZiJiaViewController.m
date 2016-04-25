@@ -36,9 +36,9 @@
     [self.navigationController.navigationBar setTitleTextAttributes:titleAttr];
 
     
-    
-    
-    
+    _i = @"";
+    _j = @"";
+    _k = @"";
     
     
     
@@ -62,7 +62,7 @@
     
     
     //  创建第一个菜单的first数据second数据
-    NSArray *firstArrOne = [NSArray arrayWithObjects:@"奔驰",@"奥迪",@"宝马",@"本田",@"比亚迪",@"东方标准",@"别克",@"丰田",@"福特",@"海马",@"吉利",@"雷克萨斯", nil];
+    NSArray *firstArrOne = [NSArray arrayWithObjects:@"全部",@"奥迪",@"宝马",@"奔驰",@"本田",@"比亚迪",@"别克",@"东方标致",@"丰田",@"福特",@"海马",@"吉利",@"雷克萨斯",@"陆风",@"MG",@"马自达",@"起亚", nil];
     
     
     NSArray *firstMenu = [NSArray arrayWithObject:firstArrOne];
@@ -71,12 +71,12 @@
     
     
     //  创建第二个菜单的first数据second数据
-    NSArray *firstArrTwo = [NSArray arrayWithObjects:@"100",@"200", @"300",@"400",@"500",@"600",@"700",nil];
+    NSArray *firstArrTwo = [NSArray arrayWithObjects:@"全部",@"100",@"200", @"300",@"400",@"500",@"600",@"700",nil];
     //NSArray *secondArrTwo = @[@[@"200-300",@"300-400"],@[@"600-750",@"750-900"]];
     NSArray *secondMenu = [NSArray arrayWithObjects:firstArrTwo, nil];
     
     //  创建第三个菜单的first数据second数据
-    NSArray *firstArrThree = [NSArray arrayWithObjects:@"1.3L",@"1.4L", @"1.5L",@"1.6L",@"1.8L",@"2.0L", nil];
+    NSArray *firstArrThree = [NSArray arrayWithObjects:@"全部",@"1.3L",@"1.4L", @"1.5L",@"1.6L",@"1.8L",@"2.0L",@"1.5T",@"1.6T",@"1.8T",@"2.0T", nil];
    // NSArray *secondArrThree = @[@[@"一周",@"一个月"],@[@"半天",@"一天半"]];
     NSArray *threeMenu = [NSArray arrayWithObjects:firstArrThree, nil];
     
@@ -129,14 +129,138 @@
 
 - (void)menuCellDidSelected:(NSInteger)MenuIndex andDetailIndex:(NSInteger)DetailIndex andTag:(NSInteger)BtnTag{
     NSLog(@"按钮号:%ld 菜单数:%ld 子菜单数:%ld",BtnTag,MenuIndex,DetailIndex);
-    if (BtnTag==0&&MenuIndex==0&&DetailIndex==0) {
-        _i=@"奔驰";
-
-            [self request];
-        }
-   
-   
+    switch (BtnTag) {
+        case 0:
+            switch (MenuIndex) {
+                case 0:
+                    _i = @"全部";
+                    break;
+                case 1:
+                    _i = @"奥迪";
+                    break;
+                case 2:
+                    _i = @"宝马";
+                    break;
+                case 3:
+                    _i = @"奔驰";
+                    break;
+                case 4:
+                    _i = @"本田";
+                    break;
+                case 5:
+                    _i = @"比亚迪";
+                    break;
+                case 6:
+                    _i = @"别克";
+                    break;
+                case 7:
+                    _i = @"东方标致";
+                    break;
+                case 8:
+                    _i = @"丰田";
+                    break;
+                case 9:
+                    _i = @"福特";
+                    break;
+                case 10:
+                    _i = @"海马";
+                    break;
+                case 11:
+                    _i = @"吉利";
+                    break;
+                case 12:
+                    _i = @"雷克萨斯";
+                    break;
+                case 13:
+                    _i = @"陆风";
+                    break;
+                case 14:
+                    _i = @"MG";
+                    break;
+                case 15:
+                    _i = @"马自达";
+                    break;
+                case 16:
+                    _i = @"起亚";
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case 1:
+            switch (MenuIndex) {
+                case 0:
+                    _j = @"全部";
+                    break;
+                case 1:
+                    _j = @"100";
+                    break;
+                case 2:
+                    _j = @"200";
+                    break;
+                case 3:
+                    _j = @"300";
+                    break;
+                case 4:
+                    _j = @"400";
+                    break;
+                case 5:
+                    _j = @"500";
+                    break;
+                case 6:
+                    _j = @"600";
+                    break;
+                case 7:
+                    _j = @"700";
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case 2:
+            switch (MenuIndex) {
+                case 0:
+                    _k = @"全部";
+                    break;
+                case 1:
+                    _k = @"1.3L";
+                    break;
+                case 2:
+                    _k = @"1.4L";
+                    break;
+                case 3:
+                    _k = @"1.5L";
+                    break;
+                case 4:
+                    _k = @"1.6L";
+                    break;
+                case 5:
+                    _k = @"1.8L";
+                    break;
+                case 6:
+                    _k = @"2.0L";
+                    break;
+                case 7:
+                    _k = @"1.5T";
+                    break;
+                case 8:
+                    _k = @"1.6T";
+                    break;
+                case 9:
+                    _k = @"1.8T";
+                    break;
+                case 10:
+                    _k = @"2.0T";
+                    break;
+                default:
+                    break;
+            }
+            break;
+        default:
+            break;
+    }
     
+    [self request];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -230,8 +354,16 @@
 -(void)request{
     [_objectsForShow removeAllObjects];
     
-    NSPredicate *predicate=[NSPredicate predicateWithFormat:@"brand = %@",_i];
-    PFQuery *query = [PFQuery queryWithClassName:@"Vehicle"predicate:predicate];
+    PFQuery *query = [PFQuery queryWithClassName:@"Vehicle"];
+    if (![_i isEqualToString:@""]) {
+        [query whereKey:@"brand" equalTo:_i];
+    }
+    if (![_j isEqualToString:@""]) {
+        [query whereKey:@"carRental" equalTo:_j];
+    }
+    if (![_k isEqualToString:@""]) {
+        [query whereKey:@"displacement" equalTo:_k];
+    }
     
     //让导航条失去交互能力
     self.navigationController.view.userInteractionEnabled = NO;
