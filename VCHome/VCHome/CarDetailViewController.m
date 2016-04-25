@@ -30,6 +30,7 @@
     _chepaihao.text = [NSString stringWithFormat:@"车牌:%@",_object[@"carNum"]];
     _fengge.text = [NSString stringWithFormat:@"风格:%@",_object[@"gearCategory"]];
     _zuqi.text = [NSString stringWithFormat:@"租期:%@",_object[@"lease"]] ;
+    _miaoshu.text =[NSString stringWithFormat:@"车主描述：%@",_object[@"describe"]];
     PFFile *photoFile = _object[@"photos"];
     NSString *photoURLStr = photoFile.url;
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];

@@ -158,6 +158,15 @@
     [self signInWithUsername:username andPassword:password];
 }
 
+//按return收回键盘
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    
+}
 
 
 @end

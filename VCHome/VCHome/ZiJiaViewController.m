@@ -400,12 +400,21 @@
 }
 
 - (IBAction)Push:(UIButton *)sender {
-    
+    [_objectsForShow removeAllObjects];
     ViewController *vc=[[ViewController alloc]init];
-    
+    __weak ZiJiaViewController *weakSelf = self;
     [vc returnText:^(NSString *cityname) {
         
         self.citylable.text=cityname;
+        
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"city = %@",cityname];
+        PFQuery *query = [PFQuery queryWithClassName:@"Vehicle" predicate:predicate];
+        [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+            NSLog(@"-->%@",objects);
+            _objectsForShow = [NSMutableArray arrayWithArray:objects];
+            [weakSelf.tableView reloadData];
+        }];
+        
     }];
     
     vc.hidesBottomBarWhenPushed = YES;
