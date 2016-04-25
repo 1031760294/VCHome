@@ -28,11 +28,11 @@
 //每一次这个页面出现的时候都会调用和这个方法，并且时机点页面将要出现之前
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    //self.navigationController.navigationBar.hidden = YES;
+    self.navigationController.navigationBar.hidden = YES;
        if (![[Utilities getUserDefaults:@"username"] isKindOfClass:[NSNull class]]) {
         //如果有记忆就把记忆显示在用户名文本输入框
         _username.text = [Utilities getUserDefaults:@"username"];
-           [self.navigationController.navigationBar setBarTintColor:[UIColor yellowColor]];
+           [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     }
 }
 //每一次这个页面出现的时候都会调用这个方法，并且时机点是页面已然出现以后

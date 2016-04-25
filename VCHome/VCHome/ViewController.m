@@ -70,7 +70,7 @@
     [self initTableView];
     [self initSearchController];
     
-    self.navigationController.navigationBar.barTintColor=RGB(44, 166, 248);
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     NSMutableDictionary *titleAttr = [NSMutableDictionary dictionary];
     titleAttr[NSForegroundColorAttributeName] = [UIColor whiteColor];
     [self.navigationController.navigationBar setTitleTextAttributes:titleAttr];

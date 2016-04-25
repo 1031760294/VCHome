@@ -10,4 +10,7 @@
 
 @interface LeftViewController : UIViewController
 
+
+- (IBAction)signOutActioni:(UIButton *)sender forEvent:(UIEvent *)event;
+
 @end

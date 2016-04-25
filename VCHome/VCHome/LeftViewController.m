@@ -34,4 +34,17 @@
 }
 */
 
+- (IBAction)signOutActioni:(UIButton *)sender forEvent:(UIEvent *)event {
+    //退出登录
+    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
+        //判断退出是否成功
+        if (!error) {
+            //返回登录页面
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }else{
+            [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
+        }
+    }];
+
+}
 @end

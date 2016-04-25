@@ -10,7 +10,8 @@
 
 @interface ZiJiaViewController : UIViewController
 @property (weak ,nonatomic) IBOutlet UITableView *tableView;
-- (IBAction)menuAction:(UIBarButtonItem *)sender;
+- (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event;
+
 @property (strong, nonatomic) IBOutlet UILabel *citylable;
 
 @property(nonatomic, strong)NSString *cityName;

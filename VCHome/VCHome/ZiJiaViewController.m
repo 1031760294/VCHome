@@ -25,16 +25,22 @@
 @end
 
 @implementation ZiJiaViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    //定位
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     self.title=@"Welcome";
-    self.navigationController.navigationBar.barTintColor=RGB(44, 166, 248);
+    
+    
     NSMutableDictionary *titleAttr = [NSMutableDictionary dictionary];
     titleAttr[NSForegroundColorAttributeName] = [UIColor blackColor];
     [self.navigationController.navigationBar setTitleTextAttributes:titleAttr];
+    
 
+    self.navigationController.navigationBar.barTintColor =[UIColor whiteColor];
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    //定位
+   
     
     _i = @"";
     _j = @"";
@@ -99,13 +105,13 @@
     
     //第一次进入的引导动画
     
-    NSMutableArray *paths = [NSMutableArray new];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"11" ofType:@"jpg"]];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"12" ofType:@"jpg"]];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"13" ofType:@"jpg"]];
-    [paths addObject:[[NSBundle mainBundle] pathForResource:@"14" ofType:@"jpg"]];
-    [[KSGuideManager shared] showGuideViewWithImages:paths];
-    
+//    NSMutableArray *paths = [NSMutableArray new];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"11" ofType:@"jpg"]];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"12" ofType:@"jpg"]];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"13" ofType:@"jpg"]];
+//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"14" ofType:@"jpg"]];
+//    [[KSGuideManager shared] showGuideViewWithImages:paths];
+//    
 
 }
 
@@ -292,9 +298,9 @@
 
 
 
-- (IBAction)menuAction:(UIBarButtonItem *)sender {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"MenuSwitch" object:nil];
-}
+//- (IBAction)menuAction:(UIBarButtonItem *)sender {
+//    [[NSNotificationCenter defaultCenter]postNotificationName:@"MenuSwitch" object:nil];
+//}
 //数据请求
 - (void)requestData {
     [_objectsForShow removeAllObjects];
@@ -419,6 +425,7 @@
     
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 
@@ -442,4 +449,7 @@
     
 }
 
+- (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event {
+     [[NSNotificationCenter defaultCenter]postNotificationName:@"MenuSwitch" object:nil];
+}
 @end
