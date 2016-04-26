@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *email;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property (weak, nonatomic) IBOutlet UITextField *registra;
+@property (weak, nonatomic) IBOutlet UITextField *nickName;
 
 - (IBAction)signUp:(UIButton *)sender forEvent:(UIEvent *)event;
 

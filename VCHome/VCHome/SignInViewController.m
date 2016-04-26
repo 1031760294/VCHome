@@ -10,12 +10,14 @@
 #import "SignUpViewController.h"
 #import "ForgetPwdViewController.h"
 #import "TabViewController.h"
-#import "LeftViewController.h"
+#import "KSGuideManager.h"
 #import <ECSlidingViewController/ECSlidingViewController.h>
-
+#import "LeftViewController.h"
 
 @interface SignInViewController ()
-@property (strong,nonatomic) ECSlidingViewController * slidingVC;
+@property(strong, nonatomic) ECSlidingViewController *slidingVC;
+
+
 @end
 
 @implementation SignInViewController
@@ -24,6 +26,16 @@
     [super viewDidLoad];
         // Do any additional setup after loading the view.
     
+    //第一次进入的引导动画
+    
+        NSMutableArray *paths = [NSMutableArray new];
+        [paths addObject:[[NSBundle mainBundle] pathForResource:@"11" ofType:@"jpg"]];
+        [paths addObject:[[NSBundle mainBundle] pathForResource:@"12" ofType:@"jpg"]];
+        [paths addObject:[[NSBundle mainBundle] pathForResource:@"13" ofType:@"jpg"]];
+        [paths addObject:[[NSBundle mainBundle] pathForResource:@"14" ofType:@"jpg"]];
+        [[KSGuideManager shared] showGuideViewWithImages:paths];
+        
+
 }
 //每一次这个页面出现的时候都会调用和这个方法，并且时机点页面将要出现之前
 -(void)viewWillAppear:(BOOL)animated{
@@ -60,61 +72,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-}
-*/
--(void)popUpHome{
-    //根据故事板和故事板中页面的名称获得这个页面
-    TabViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Tab"];
-    //初始化移门的门框,并设置中间那扇门
-    _slidingVC = [ECSlidingViewController slidingWithTopViewController:tabVC];
-    //设置开门关门的耗时
-    _slidingVC.defaultTransitionDuration = 0.25f;
-    //设置控制门开关的手势(这里同时对触摸和拖拽响应)
-    _slidingVC.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGesturePanning|ECSlidingViewControllerAnchoredGestureTapping;
-    
-    //设置上述手势的识别范围
-    [tabVC.view addGestureRecognizer:_slidingVC.panGesture];
-    
-    //根据故事版id获得左滑页面的实例
-    LeftViewController *leftVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Left"];
-    //设置移门靠左的那扇门
-    _slidingVC.underLeftViewController = leftVC;
-    //设置移门的开闭程度(设置左侧页面显示时，可以显示屏幕宽度3/4宽度)
-    _slidingVC.anchorRightPeekAmount = UI_SCREEN_W / 4;
-    //创建一个菜单按钮被按时的通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuSwitchAction) name:@"MenuSwitch" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableGestureAction) name:@"EnableGesture" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableGestureAction) name:@"DisableGesture" object:nil];
-    //modal方式跳转到上述页面
-    [self presentViewController:_slidingVC animated:YES completion:nil];
-}
-//关闭移门手势
--(void)disableGestureAction{
-    _slidingVC.panGesture.enabled =NO;
-}
-//激活移门手势
--(void)enableGestureAction{
-    _slidingVC.panGesture.enabled =YES;
-}
--(void)menuSwitchAction{
-    NSLog(@"菜单");
-    if (_slidingVC.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredRight)
-    {
-        //上述条件表示中间那扇门正移在右侧,说明门是打开的,因此我们需要将它关闭,也就是将中间的门移回中间
-        [_slidingVC resetTopViewAnimated:YES];
-    }
-    else
-    {
-        //反之将中间的门移到右边
-        [_slidingVC anchorTopViewToRightAnimated:YES];
-    }
 }
 
 -(void)signInWithUsername:(NSString *)username andPassword:(NSString *)password{
@@ -146,6 +110,67 @@
         }
     }];
 }
+
+-(void)popUpHome {
+    
+    //根据故事版的名称和故事版中页面的名称获得这个页面
+    TabViewController *tabVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Tab"];
+    //初始化移门的门框,并设置中间那扇门
+    _slidingVC = [ECSlidingViewController slidingWithTopViewController:tabVC];
+    //设置开门关门的耗时    _slidingVC.defaultTransitionDuration = 0.25f;
+    //设置控制门开关的手势(这里同时对触摸和拖拽响应)
+    _slidingVC.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGesturePanning|ECSlidingViewControllerAnchoredGestureTapping;
+    
+    //设置上述手势的识别范围
+    [tabVC.view addGestureRecognizer:_slidingVC.panGesture];
+    
+    //根据故事版id获得左滑页面的实例
+    LeftViewController *leftVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Left"];
+    //设置移门靠左的那扇门
+    _slidingVC.underLeftViewController = leftVC;
+    //设置移门的开闭程度(设置左侧页面显示时，可以显示屏幕宽度3/4宽度)
+    _slidingVC.anchorRightPeekAmount = UI_SCREEN_W / 3;
+    
+    //创建一个菜单按钮被按时要执行侧滑方法的通知
+    
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(menuSwitchAction) name:@"MenuSwitch" object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(EnableGestureAction) name:@"EnableGesture" object:nil];
+    
+    [[NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(DisableGestureAtion) name:@"DisableGesture" object:nil];
+    
+
+    //modal方式跳转到上述页面
+    [self presentViewController:_slidingVC animated:YES completion:nil];
+    
+}
+//激活移门手势
+-(void)EnableGestureAction {
+    _slidingVC.panGesture.enabled = YES;
+    
+}
+
+//关闭移门手势
+-(void)DisableGestureAtion {
+    _slidingVC.panGesture.enabled = NO;
+    
+    
+}
+-(void)menuSwitchAction {
+    NSLog(@"菜单被按了");
+    if (_slidingVC.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredRight) {
+        //上述表示中间门在右侧，说明门是打开的，因此我们要将它关闭，移回中间
+        [_slidingVC resetTopViewAnimated:YES];
+        
+    }else {
+        //反之将中间的门移到右边
+        [_slidingVC anchorTopViewToRightAnimated:YES];
+    }
+    
+}
+
+
 
 - (IBAction)loginAction:(UIButton *)sender forEvent:(UIEvent *)event {
     NSString *username = _username.text;

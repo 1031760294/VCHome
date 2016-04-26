@@ -42,6 +42,7 @@
 
 - (IBAction)signUp:(UIButton *)sender forEvent:(UIEvent *)event {
     NSString *username = _username.text;
+    NSString *nickname = _nickName.text;
     NSString *email = _email.text;
     NSString *password = _password.text;
     NSString *registra = _registra.text;
@@ -61,6 +62,7 @@
     user.username = username;
     user.email = email;
     user.password = password;
+    user[@"nickame"] = nickname;
     UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
     //开始注册
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
@@ -81,6 +83,7 @@
             _registra.text = @"";
             _username.text = @"";
             _email.text = @"";
+            _nickName.text = @"";
             //回到登录页面
             [self.navigationController popViewControllerAnimated:YES];
         }else{
@@ -97,7 +100,8 @@
                 case 125:
                     [Utilities popUpAlertViewWithMsg:@"该电子邮箱不存在" andTitle:nil onView:self];
                     break;
-                    
+                case 101:
+                    [Utilities popUpAlertViewWithMsg:@"该昵称已被使用" andTitle:nil onView:self];
                     
                 default:[Utilities popUpAlertViewWithMsg:@"服务器正在维护，请稍后再试" andTitle:nil onView:self];
                     break;

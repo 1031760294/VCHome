@@ -43,6 +43,11 @@
 		9A7822011CC4780B00A1F79B /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7822001CC4780B00A1F79B /* LeftViewController.m */; };
 		9A7822041CC4795E00A1F79B /* ZhuanCheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */; };
 		9A7822071CC4797900A1F79B /* ZiJiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7822061CC4797900A1F79B /* ZiJiaViewController.m */; };
+		9AABE8C11CCF4C78009C0F80 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8BD1CCF4C78009C0F80 /* 11.jpg */; };
+		9AABE8C21CCF4C78009C0F80 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8BE1CCF4C78009C0F80 /* 12.jpg */; };
+		9AABE8C31CCF4C78009C0F80 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8BF1CCF4C78009C0F80 /* 13.jpg */; };
+		9AABE8C41CCF4C78009C0F80 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8C01CCF4C78009C0F80 /* 14.jpg */; };
+		9AABE8C71CCF6A12009C0F80 /* personalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AABE8C61CCF6A12009C0F80 /* personalViewController.m */; };
 		9AB13BCC1CC20F6A001B8869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BCB1CC20F6A001B8869 /* main.m */; };
 		9AB13BCF1CC20F6A001B8869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BCE1CC20F6A001B8869 /* AppDelegate.m */; };
 		9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BD11CC20F6A001B8869 /* ViewController.m */; };
@@ -70,10 +75,6 @@
 		9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */; };
 		9AE03C291CC5D3830027801F /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C281CC5D3830027801F /* ImageTableViewCell.m */; };
 		9AE03C2F1CC64DAA0027801F /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */; };
-		9AE03C351CC651060027801F /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C311CC651060027801F /* 11.jpg */; };
-		9AE03C361CC651070027801F /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C321CC651060027801F /* 12.jpg */; };
-		9AE03C371CC651070027801F /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C331CC651060027801F /* 13.jpg */; };
-		9AE03C381CC651070027801F /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE03C341CC651060027801F /* 14.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,12 @@
 		9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanCheViewController.m; sourceTree = "<group>"; };
 		9A7822051CC4797900A1F79B /* ZiJiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiJiaViewController.h; sourceTree = "<group>"; };
 		9A7822061CC4797900A1F79B /* ZiJiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiJiaViewController.m; sourceTree = "<group>"; };
+		9AABE8BD1CCF4C78009C0F80 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		9AABE8BE1CCF4C78009C0F80 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		9AABE8BF1CCF4C78009C0F80 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		9AABE8C01CCF4C78009C0F80 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		9AABE8C51CCF6A12009C0F80 /* personalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalViewController.h; sourceTree = "<group>"; };
+		9AABE8C61CCF6A12009C0F80 /* personalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalViewController.m; sourceTree = "<group>"; };
 		9AB13BC71CC20F6A001B8869 /* VCHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB13BCB1CC20F6A001B8869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AB13BCD1CC20F6A001B8869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -210,10 +217,6 @@
 		9AE03C281CC5D3830027801F /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 		9AE03C2D1CC64DA40027801F /* KSGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSGuideManager.h; sourceTree = "<group>"; };
 		9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGuideManager.m; sourceTree = "<group>"; };
-		9AE03C311CC651060027801F /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
-		9AE03C321CC651060027801F /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
-		9AE03C331CC651060027801F /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
-		9AE03C341CC651060027801F /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,6 +491,8 @@
 				9A2646BF1CCA176C00AE4189 /* CarDetailViewController.m */,
 				9ADF46701CCE1A3E0013D56D /* HelpViewController.h */,
 				9ADF46711CCE1A3E0013D56D /* HelpViewController.m */,
+				9AABE8C51CCF6A12009C0F80 /* personalViewController.h */,
+				9AABE8C61CCF6A12009C0F80 /* personalViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -513,10 +518,10 @@
 				9ADF46531CCE15DC0013D56D /* HelpViewController.m */,
 				9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */,
 				9AE03C2D1CC64DA40027801F /* KSGuideManager.h */,
-				9AE03C311CC651060027801F /* 11.jpg */,
-				9AE03C321CC651060027801F /* 12.jpg */,
-				9AE03C331CC651060027801F /* 13.jpg */,
-				9AE03C341CC651060027801F /* 14.jpg */,
+				9AABE8BD1CCF4C78009C0F80 /* 11.jpg */,
+				9AABE8BE1CCF4C78009C0F80 /* 12.jpg */,
+				9AABE8BF1CCF4C78009C0F80 /* 13.jpg */,
+				9AABE8C01CCF4C78009C0F80 /* 14.jpg */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -636,18 +641,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AABE8C21CCF4C78009C0F80 /* 12.jpg in Resources */,
 				3CFECF161CC9FEAE00BD361D /* unicode_to_hanyu_pinyin.txt in Resources */,
 				3CFECEF61CC9FE4300BD361D /* ItemViewCell.xib in Resources */,
 				3CFECEF21CC9FE4300BD361D /* CityViewCell.xib in Resources */,
-				9AE03C361CC651070027801F /* 12.jpg in Resources */,
+				9AABE8C11CCF4C78009C0F80 /* 11.jpg in Resources */,
+				9AABE8C31CCF4C78009C0F80 /* 13.jpg in Resources */,
+				9AABE8C41CCF4C78009C0F80 /* 14.jpg in Resources */,
 				3CFECEF41CC9FE4300BD361D /* HeadView.xib in Resources */,
-				9AE03C371CC651070027801F /* 13.jpg in Resources */,
 				9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */,
-				9AE03C381CC651070027801F /* 14.jpg in Resources */,
 				9AB13BDD1CC20F6A001B8869 /* LaunchScreen.storyboard in Resources */,
 				3CFECEF01CC9FE4300BD361D /* citydict.plist in Resources */,
 				9AB13BDA1CC20F6A001B8869 /* Assets.xcassets in Resources */,
-				9AE03C351CC651060027801F /* 11.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +733,7 @@
 				9A2646C01CCA176C00AE4189 /* CarDetailViewController.m in Sources */,
 				9A7822071CC4797900A1F79B /* ZiJiaViewController.m in Sources */,
 				3CFECF101CC9FEAE00BD361D /* ChineseToPinyinResource.m in Sources */,
+				9AABE8C71CCF6A12009C0F80 /* personalViewController.m in Sources */,
 				3CFECEF51CC9FE4300BD361D /* ItemViewCell.m in Sources */,
 				9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */,
 				3CFECEF91CC9FE4300BD361D /* RootViewController.m in Sources */,

@@ -299,6 +299,9 @@
     [[NSNotificationCenter defaultCenter]postNotificationName:@"DisableGesture" object:nil];
 }
 
+- (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"MenuSwitch" object:nil];
+}
 
 
 //- (IBAction)menuAction:(UIBarButtonItem *)sender {
@@ -452,7 +455,4 @@
     
 }
 
-- (IBAction)menuAction:(UIButton *)sender forEvent:(UIEvent *)event {
-     [[NSNotificationCenter defaultCenter]postNotificationName:@"MenuSwitch" object:nil];
-}
 @end

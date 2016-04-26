@@ -7,7 +7,7 @@
 //
 
 #import "LeftViewController.h"
-
+#import <SDWebImage/UIButton+WebCache.h>
 @interface LeftViewController ()
 
 @end
@@ -16,12 +16,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+       
+    [self requsetData];
+
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)requsetData{
+    
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSLog(@"00000");
+        _nickname.hidden = YES;
+        _loginame.text = currentUser[@"nickname"];
+        PFFile *photofile = currentUser[@"headPortrait"];
+        if(photofile){
+            NSString *photoURLStr = photofile.url;
+            NSURL *photoURL = [NSURL URLWithString:photoURLStr];
+            NSLog(@"%@",photoURL);
+            //[_imv sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image5"]];
+            [_imageBtn sd_setBackgroundImageWithURL:photoURL forState:UIControlStateNormal];
+            
+        }else{
+            [_imageBtn setBackgroundImage:[UIImage imageNamed:@"Image-3"] forState:UIControlStateNormal];        }
+        
+        
+    }else{
+        [_imageBtn setBackgroundImage:[UIImage imageNamed:@"Image-3"] forState:UIControlStateNormal];
+        _loginame.hidden = NO;
+        _nickname.text = @"";
+    }
+    
+    
+    
 }
 
 /*
@@ -34,13 +65,36 @@
 }
 */
 
+- (IBAction)imageAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    PFUser *currentUser  = [PFUser currentUser];
+    NSLog(@"currentUser = %@",currentUser);
+    if (currentUser) {
+        UINavigationController *mineVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"person"];
+        [self presentViewController:mineVC animated:YES completion:nil];
+        
+        
+        
+    }else{
+        
+        NSLog(@"当前用户没登录");
+        UINavigationController *SignVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Sign"];
+        [self presentViewController:SignVC animated:YES completion:nil];
+        
+        
+    }
+
+    
+
+}
+
 - (IBAction)signOutActioni:(UIButton *)sender forEvent:(UIEvent *)event {
     //退出登录
     [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
         //判断退出是否成功
         if (!error) {
             //返回登录页面
-            [self dismissViewControllerAnimated:YES completion:nil];
+             UINavigationController *SignVC = [Utilities getStoryboardInstance:@"Main" byIdentity:@"Sign"];
+             [self presentViewController:SignVC animated:YES completion:nil];
         }else{
             [Utilities popUpAlertViewWithMsg:@"请保持网络连接畅通" andTitle:nil onView:self];
         }
