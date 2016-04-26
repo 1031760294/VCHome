@@ -68,7 +68,7 @@
     
     
     //  创建第一个菜单的first数据second数据
-    NSArray *firstArrOne = [NSArray arrayWithObjects:@"全部",@"奥迪",@"宝马",@"奔驰",@"本田",@"比亚迪",@"别克",@"东方标致",@"丰田",@"福特",@"海马",@"吉利",@"雷克萨斯",@"陆风",@"MG",@"马自达",@"起亚", nil];
+    NSArray *firstArrOne = [NSArray arrayWithObjects:@"全部",@"奥迪",@"宝马",@"奔驰",@"本田",@"比亚迪",@"别克",@"东方标致",@"丰田",@"福特",@"海马",@"吉利",@"雷克萨斯",@"陆风",@"MG",@"马自达",@"起亚",@"奇瑞",@"日产",@"荣威",@"三菱", nil];
     
     
     NSArray *firstMenu = [NSArray arrayWithObject:firstArrOne];
@@ -138,9 +138,6 @@
     switch (BtnTag) {
         case 0:
             switch (MenuIndex) {
-                case 0:
-                    _i = @"全部";
-                    break;
                 case 1:
                     _i = @"奥迪";
                     break;
@@ -189,15 +186,24 @@
                 case 16:
                     _i = @"起亚";
                     break;
+                case 17:
+                    _i = @"奇瑞";
+                    break;
+                case 18:
+                    _i = @"日产";
+                    break;
+                case 19:
+                    _i = @"荣威";
+                    break;
+                case 20:
+                    _i = @"三菱 ";
+                    break;
                 default:
                     break;
             }
             break;
         case 1:
             switch (MenuIndex) {
-                case 0:
-                    _j = @"全部";
-                    break;
                 case 1:
                     _j = @"100";
                     break;
@@ -225,9 +231,6 @@
             break;
         case 2:
             switch (MenuIndex) {
-                case 0:
-                    _k = @"全部";
-                    break;
                 case 1:
                     _k = @"1.3L";
                     break;
