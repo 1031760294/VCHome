@@ -7,6 +7,7 @@
 //
 
 #import "LeftViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/UIButton+WebCache.h>
 @interface LeftViewController ()
 
@@ -31,13 +32,15 @@
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         NSLog(@"00000");
-        _nickname.hidden = YES;
-        _loginame.text = currentUser[@"nickname"];
+        
+//        _nickname.hidden = YES;
+        _nickname.text = currentUser[@"nickname"];
         PFFile *photofile = currentUser[@"headPortrait"];
         if(photofile){
             NSString *photoURLStr = photofile.url;
             NSURL *photoURL = [NSURL URLWithString:photoURLStr];
-            NSLog(@"%@",photoURL);
+            
+            NSLog(@"photoURL = %@",photoURL);
             //[_imv sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image5"]];
             [_imageBtn sd_setBackgroundImageWithURL:photoURL forState:UIControlStateNormal];
             
@@ -47,8 +50,7 @@
         
     }else{
         [_imageBtn setBackgroundImage:[UIImage imageNamed:@"Image-3"] forState:UIControlStateNormal];
-        _loginame.hidden = NO;
-        _nickname.text = @"";
+                _nickname.text = @"";
     }
     
     
@@ -101,4 +103,14 @@
     }];
 
 }
+//按return收回键盘
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    
+}
+
 @end

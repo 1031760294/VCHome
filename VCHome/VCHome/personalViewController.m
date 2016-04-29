@@ -53,7 +53,8 @@
     [_imagerview sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"Image-3"]];
     
     NSString *nick = currentuser[@"nickname"];
-    _nicknameTF.text =nick;
+    NSLog(@"nick = %@",nick);
+    _nicknameTF.text = nick;
     NSString *gender = currentuser[@"gender"];
     _genderTF.text = gender;
     NSString *email = currentuser[@"email"];
@@ -87,7 +88,7 @@
 }
 
 - (IBAction)pickimage:(UITapGestureRecognizer *)sender {
-    NSLog(@"asdadsasd");
+    NSLog(@"头像");
     
     UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *takePhoto = [UIAlertAction actionWithTitle:@"照相" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -135,10 +136,12 @@
     NSString *name = _nicknameTF.text;
     NSString *gender = _genderTF.text;
     NSString *email = _emailTF.text;
+    
     if (name.length == 0) {
         [Utilities popUpAlertViewWithMsg:@"请输入昵称" andTitle:nil onView:self];
     } else {
         PFUser *currentUser = [PFUser currentUser];
+        NSLog(@"currentUser = %@",currentUser);
         currentUser[@"nickname"] = name;
         currentUser[@"gender"] = gender;
         currentUser[@"email"] = email;
@@ -162,8 +165,15 @@
         }];
     }
         
-    
-    
-
 }
+//按return收回键盘
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    
+}
+
 @end
