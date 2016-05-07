@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dsC-Xf-TXy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dsC-Xf-TXy">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -560,6 +560,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-Iu-bYR">
                                 <rect key="frame" x="0.0" y="438" width="30" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -576,6 +577,12 @@
                                 <state key="normal" title="收藏">
                                     <color key="titleColor" red="1" green="0.1995182328" blue="0.13684129149999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-eu-aVc">
+                                <rect key="frame" x="100" y="487" width="120" height="31"/>
+                                <color key="backgroundColor" red="0.64308372540000003" green="0.92184667730000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="立即预约"/>
+>>>>>>> 7c65eacf1ac18864f82a020b033b007ba2eb2082
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -595,6 +602,7 @@
                             <constraint firstItem="yPf-kS-MIz" firstAttribute="top" secondItem="DTX-7z-9rz" secondAttribute="top" id="I6L-ZM-vy5"/>
                             <constraint firstAttribute="trailing" secondItem="DPg-td-00V" secondAttribute="trailing" id="K77-Vb-fJm"/>
                             <constraint firstItem="DPg-td-00V" firstAttribute="leading" secondItem="nQX-aU-YEW" secondAttribute="trailing" id="K8Q-Ji-fkA"/>
+                            <constraint firstItem="NBk-eu-aVc" firstAttribute="top" secondItem="42n-e5-yND" secondAttribute="bottom" constant="50" id="LWS-bb-Sb2"/>
                             <constraint firstItem="Ule-gG-23C" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="Lm5-lx-KvN"/>
                             <constraint firstItem="42n-e5-yND" firstAttribute="top" secondItem="Lgx-hv-5ZZ" secondAttribute="bottom" constant="8" id="ORN-9l-eMX"/>
                             <constraint firstItem="5gf-T7-DvI" firstAttribute="top" secondItem="42n-e5-yND" secondAttribute="bottom" constant="1" id="OVb-Jx-uco"/>
@@ -607,6 +615,7 @@
                             <constraint firstItem="Kz6-8s-McY" firstAttribute="leading" secondItem="DTX-7z-9rz" secondAttribute="trailing" id="aqL-YB-61K"/>
                             <constraint firstItem="9nC-Iu-bYR" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="bAO-aH-JUb"/>
                             <constraint firstItem="Lgx-hv-5ZZ" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="dDN-p7-Xza"/>
+                            <constraint firstAttribute="trailing" secondItem="NBk-eu-aVc" secondAttribute="trailing" constant="100" id="dFX-z4-YLR"/>
                             <constraint firstItem="yPf-kS-MIz" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="dHH-RQ-ydG"/>
                             <constraint firstItem="DPg-td-00V" firstAttribute="top" secondItem="Lgx-hv-5ZZ" secondAttribute="top" id="dO3-lO-qeX"/>
                             <constraint firstItem="yPf-kS-MIz" firstAttribute="leading" secondItem="Kz6-8s-McY" secondAttribute="trailing" id="eNv-4l-Dbo"/>
@@ -617,10 +626,12 @@
                             <constraint firstItem="DTX-7z-9rz" firstAttribute="top" secondItem="gpf-Yr-WkF" secondAttribute="bottom" constant="10" id="hm8-4U-UfE"/>
                             <constraint firstItem="Lgx-hv-5ZZ" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="iVD-dA-GbS"/>
                             <constraint firstItem="gpf-Yr-WkF" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="jqd-oO-Ryh"/>
+                            <constraint firstItem="NBk-eu-aVc" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" constant="100" id="ltw-dw-fXb"/>
                             <constraint firstItem="Kz6-8s-McY" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="mtV-yW-gQh"/>
                             <constraint firstItem="nQX-aU-YEW" firstAttribute="leading" secondItem="vBO-Lg-KyH" secondAttribute="trailing" id="mw8-TJ-hoB"/>
                             <constraint firstItem="nQX-aU-YEW" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="oPY-m8-6cF"/>
                             <constraint firstItem="vBO-Lg-KyH" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="tqe-0u-RdG"/>
+                            <constraint firstItem="nbP-uc-zuh" firstAttribute="top" secondItem="NBk-eu-aVc" secondAttribute="bottom" constant="50" id="uCl-C7-b5q"/>
                             <constraint firstItem="DTX-7z-9rz" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="vEC-an-0LL"/>
                             <constraint firstItem="9nC-Iu-bYR" firstAttribute="top" secondItem="42n-e5-yND" secondAttribute="bottom" constant="1" id="vER-z5-Jz5"/>
                             <constraint firstItem="Ule-gG-23C" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="vc7-xp-dsw"/>
