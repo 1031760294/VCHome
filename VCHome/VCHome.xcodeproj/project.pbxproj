@@ -75,6 +75,15 @@
 		9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C251CC5BFC50027801F /* WJDropdownMenu.m */; };
 		9AE03C291CC5D3830027801F /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C281CC5D3830027801F /* ImageTableViewCell.m */; };
 		9AE03C2F1CC64DAA0027801F /* KSGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */; };
+		9AFD4E361CDDBCBC00D352CF /* ZYShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD4E2D1CDDBCBC00D352CF /* ZYShareView.m */; };
+		9AFD4E371CDDBCBC00D352CF /* ZYShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD4E2F1CDDBCBC00D352CF /* ZYShareItem.m */; };
+		9AFD4E381CDDBCBC00D352CF /* ZYShareItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD4E311CDDBCBC00D352CF /* ZYShareItemCell.m */; };
+		9AFD4E391CDDBCBC00D352CF /* ZYShareSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD4E331CDDBCBC00D352CF /* ZYShareSheetCell.m */; };
+		9AFD4E3A1CDDBCBC00D352CF /* ZYShareSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD4E351CDDBCBC00D352CF /* ZYShareSheetView.m */; };
+		9AFD4E421CDDC4C100D352CF /* BWYPopNomal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFD4E3C1CDDC4C000D352CF /* BWYPopNomal.png */; };
+		9AFD4E431CDDC4C100D352CF /* BWYPopSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFD4E3D1CDDC4C100D352CF /* BWYPopSelect.png */; };
+		9AFD4E441CDDC4C100D352CF /* BWYPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD4E3F1CDDC4C100D352CF /* BWYPopUpView.m */; };
+		9AFD4E451CDDC4C100D352CF /* tipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD4E411CDDC4C100D352CF /* tipsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +226,23 @@
 		9AE03C281CC5D3830027801F /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 		9AE03C2D1CC64DA40027801F /* KSGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSGuideManager.h; sourceTree = "<group>"; };
 		9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGuideManager.m; sourceTree = "<group>"; };
+		9AFD4E2B1CDDBCBC00D352CF /* ZYShareViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareViewDefine.h; sourceTree = "<group>"; };
+		9AFD4E2C1CDDBCBC00D352CF /* ZYShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareView.h; sourceTree = "<group>"; };
+		9AFD4E2D1CDDBCBC00D352CF /* ZYShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareView.m; sourceTree = "<group>"; };
+		9AFD4E2E1CDDBCBC00D352CF /* ZYShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareItem.h; sourceTree = "<group>"; };
+		9AFD4E2F1CDDBCBC00D352CF /* ZYShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareItem.m; sourceTree = "<group>"; };
+		9AFD4E301CDDBCBC00D352CF /* ZYShareItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareItemCell.h; sourceTree = "<group>"; };
+		9AFD4E311CDDBCBC00D352CF /* ZYShareItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareItemCell.m; sourceTree = "<group>"; };
+		9AFD4E321CDDBCBC00D352CF /* ZYShareSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareSheetCell.h; sourceTree = "<group>"; };
+		9AFD4E331CDDBCBC00D352CF /* ZYShareSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareSheetCell.m; sourceTree = "<group>"; };
+		9AFD4E341CDDBCBC00D352CF /* ZYShareSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareSheetView.h; sourceTree = "<group>"; };
+		9AFD4E351CDDBCBC00D352CF /* ZYShareSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareSheetView.m; sourceTree = "<group>"; };
+		9AFD4E3C1CDDC4C000D352CF /* BWYPopNomal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BWYPopNomal.png; sourceTree = "<group>"; };
+		9AFD4E3D1CDDC4C100D352CF /* BWYPopSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BWYPopSelect.png; sourceTree = "<group>"; };
+		9AFD4E3E1CDDC4C100D352CF /* BWYPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWYPopUpView.h; sourceTree = "<group>"; };
+		9AFD4E3F1CDDC4C100D352CF /* BWYPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWYPopUpView.m; sourceTree = "<group>"; };
+		9AFD4E401CDDC4C100D352CF /* tipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tipsView.h; sourceTree = "<group>"; };
+		9AFD4E411CDDC4C100D352CF /* tipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tipsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +469,8 @@
 		9AB13C031CC21DD8001B8869 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				9AFD4E3B1CDDC49A00D352CF /* pingjia */,
+				9AFD4E2A1CDDBC7D00D352CF /* share */,
 				9ADF46551CCE16040013D56D /* 意见反馈 */,
 				3CFECEFC1CC9FE5F00BD361D /* LIb */,
 				9AE03C301CC650C10027801F /* image */,
@@ -524,6 +552,37 @@
 				9AABE8C01CCF4C78009C0F80 /* 14.jpg */,
 			);
 			name = image;
+			sourceTree = "<group>";
+		};
+		9AFD4E2A1CDDBC7D00D352CF /* share */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD4E2B1CDDBCBC00D352CF /* ZYShareViewDefine.h */,
+				9AFD4E2C1CDDBCBC00D352CF /* ZYShareView.h */,
+				9AFD4E2D1CDDBCBC00D352CF /* ZYShareView.m */,
+				9AFD4E2E1CDDBCBC00D352CF /* ZYShareItem.h */,
+				9AFD4E2F1CDDBCBC00D352CF /* ZYShareItem.m */,
+				9AFD4E301CDDBCBC00D352CF /* ZYShareItemCell.h */,
+				9AFD4E311CDDBCBC00D352CF /* ZYShareItemCell.m */,
+				9AFD4E321CDDBCBC00D352CF /* ZYShareSheetCell.h */,
+				9AFD4E331CDDBCBC00D352CF /* ZYShareSheetCell.m */,
+				9AFD4E341CDDBCBC00D352CF /* ZYShareSheetView.h */,
+				9AFD4E351CDDBCBC00D352CF /* ZYShareSheetView.m */,
+			);
+			name = share;
+			sourceTree = "<group>";
+		};
+		9AFD4E3B1CDDC49A00D352CF /* pingjia */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD4E3C1CDDC4C000D352CF /* BWYPopNomal.png */,
+				9AFD4E3D1CDDC4C100D352CF /* BWYPopSelect.png */,
+				9AFD4E3E1CDDC4C100D352CF /* BWYPopUpView.h */,
+				9AFD4E3F1CDDC4C100D352CF /* BWYPopUpView.m */,
+				9AFD4E401CDDC4C100D352CF /* tipsView.h */,
+				9AFD4E411CDDC4C100D352CF /* tipsView.m */,
+			);
+			name = pingjia;
 			sourceTree = "<group>";
 		};
 		D312BC92C67EDC1866F72071 /* Pods */ = {
@@ -645,11 +704,13 @@
 				3CFECF161CC9FEAE00BD361D /* unicode_to_hanyu_pinyin.txt in Resources */,
 				3CFECEF61CC9FE4300BD361D /* ItemViewCell.xib in Resources */,
 				3CFECEF21CC9FE4300BD361D /* CityViewCell.xib in Resources */,
+				9AFD4E431CDDC4C100D352CF /* BWYPopSelect.png in Resources */,
 				9AABE8C11CCF4C78009C0F80 /* 11.jpg in Resources */,
 				9AABE8C31CCF4C78009C0F80 /* 13.jpg in Resources */,
 				9AABE8C41CCF4C78009C0F80 /* 14.jpg in Resources */,
 				3CFECEF41CC9FE4300BD361D /* HeadView.xib in Resources */,
 				9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */,
+				9AFD4E421CDDC4C100D352CF /* BWYPopNomal.png in Resources */,
 				9AB13BDD1CC20F6A001B8869 /* LaunchScreen.storyboard in Resources */,
 				3CFECEF01CC9FE4300BD361D /* citydict.plist in Resources */,
 				9AB13BDA1CC20F6A001B8869 /* Assets.xcassets in Resources */,
@@ -726,10 +787,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFECF151CC9FEAE00BD361D /* PinyinHelper.m in Sources */,
+				9AFD4E381CDDBCBC00D352CF /* ZYShareItemCell.m in Sources */,
 				9A7821FE1CC4768900A1F79B /* TabViewController.m in Sources */,
 				3CFECF141CC9FEAE00BD361D /* PinYinForObjc.m in Sources */,
 				3CFECF131CC9FEAE00BD361D /* PinyinFormatter.m in Sources */,
 				506337DB1CC2531700BF3CA9 /* ForgetPwdViewController.m in Sources */,
+				9AFD4E371CDDBCBC00D352CF /* ZYShareItem.m in Sources */,
+				9AFD4E3A1CDDBCBC00D352CF /* ZYShareSheetView.m in Sources */,
 				9A2646C01CCA176C00AE4189 /* CarDetailViewController.m in Sources */,
 				9A7822071CC4797900A1F79B /* ZiJiaViewController.m in Sources */,
 				3CFECF101CC9FEAE00BD361D /* ChineseToPinyinResource.m in Sources */,
@@ -737,6 +801,7 @@
 				3CFECEF51CC9FE4300BD361D /* ItemViewCell.m in Sources */,
 				9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */,
 				3CFECEF91CC9FE4300BD361D /* RootViewController.m in Sources */,
+				9AFD4E441CDDC4C100D352CF /* BWYPopUpView.m in Sources */,
 				506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */,
 				9AB13C0B1CC21EB7001B8869 /* Utilities.m in Sources */,
 				9ADF466D1CCE19610013D56D /* PhotoCollectionViewCell.m in Sources */,
@@ -746,8 +811,10 @@
 				9AB13BD81CC20F6A001B8869 /* VCHome.xcdatamodeld in Sources */,
 				9ADF46721CCE1A3E0013D56D /* HelpViewController.m in Sources */,
 				9ADF466F1CCE19610013D56D /* UserFeedBackViewController.m in Sources */,
+				9AFD4E361CDDBCBC00D352CF /* ZYShareView.m in Sources */,
 				3CFECEFB1CC9FE4300BD361D /* ZWCollectionViewFlowLayout.m in Sources */,
 				3CFECEF31CC9FE4300BD361D /* HeadView.m in Sources */,
+				9AFD4E451CDDC4C100D352CF /* tipsView.m in Sources */,
 				9AE03C2F1CC64DAA0027801F /* KSGuideManager.m in Sources */,
 				9AB13BCF1CC20F6A001B8869 /* AppDelegate.m in Sources */,
 				3CFECEFA1CC9FE4300BD361D /* SearchResult.m in Sources */,
@@ -768,6 +835,7 @@
 				15AF4F171CC5C65100ABC6CB /* Banner.m in Sources */,
 				9ADF466E1CCE19610013D56D /* PlaceholderTextView.m in Sources */,
 				9AB13C0A1CC21EB7001B8869 /* StorageMgr.m in Sources */,
+				9AFD4E391CDDBCBC00D352CF /* ZYShareSheetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

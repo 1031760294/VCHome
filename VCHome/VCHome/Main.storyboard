@@ -456,7 +456,11 @@
                                 <action selector="menuAction:" destination="4tm-uY-4Hf" id="cOP-ws-UPp"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="Bo2-al-Sor"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="bookmarks" id="4Yc-FX-Pp4">
+                            <connections>
+                                <action selector="shareAction:" destination="4tm-uY-4Hf" id="Kn7-0t-kig"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -556,6 +560,23 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-Iu-bYR">
+                                <rect key="frame" x="0.0" y="438" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="评价">
+                                    <color key="titleColor" red="1" green="0.1995182328" blue="0.13684129149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pingjiaAction:forEvent:" destination="t82-kr-32q" eventType="touchUpInside" id="wEV-rJ-xWL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gf-T7-DvI">
+                                <rect key="frame" x="290" y="438" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="收藏">
+                                    <color key="titleColor" red="1" green="0.1995182328" blue="0.13684129149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -563,6 +584,7 @@
                             <constraint firstItem="Kz6-8s-McY" firstAttribute="top" secondItem="DTX-7z-9rz" secondAttribute="top" id="1bQ-nb-ZnG"/>
                             <constraint firstItem="Kz6-8s-McY" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="1gL-1S-z7j"/>
                             <constraint firstItem="Lgx-hv-5ZZ" firstAttribute="top" secondItem="DTX-7z-9rz" secondAttribute="bottom" constant="15" id="23f-yN-wpz"/>
+                            <constraint firstAttribute="trailing" secondItem="5gf-T7-DvI" secondAttribute="trailing" id="33D-ZE-jIC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gpf-Yr-WkF" secondAttribute="trailing" constant="54" id="3f5-Nc-Jur"/>
                             <constraint firstItem="gpf-Yr-WkF" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="AXD-6k-Xxj"/>
                             <constraint firstItem="yPf-kS-MIz" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="DBX-GC-jq8"/>
@@ -575,6 +597,7 @@
                             <constraint firstItem="DPg-td-00V" firstAttribute="leading" secondItem="nQX-aU-YEW" secondAttribute="trailing" id="K8Q-Ji-fkA"/>
                             <constraint firstItem="Ule-gG-23C" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="Lm5-lx-KvN"/>
                             <constraint firstItem="42n-e5-yND" firstAttribute="top" secondItem="Lgx-hv-5ZZ" secondAttribute="bottom" constant="8" id="ORN-9l-eMX"/>
+                            <constraint firstItem="5gf-T7-DvI" firstAttribute="top" secondItem="42n-e5-yND" secondAttribute="bottom" constant="1" id="OVb-Jx-uco"/>
                             <constraint firstAttribute="trailing" secondItem="42n-e5-yND" secondAttribute="trailing" id="RbE-bA-s5c"/>
                             <constraint firstItem="nQX-aU-YEW" firstAttribute="top" secondItem="Lgx-hv-5ZZ" secondAttribute="top" id="RyO-tx-f9A"/>
                             <constraint firstItem="gpf-Yr-WkF" firstAttribute="leading" secondItem="DTX-7z-9rz" secondAttribute="leading" id="Vs6-rF-7hO"/>
@@ -582,6 +605,7 @@
                             <constraint firstItem="DTX-7z-9rz" firstAttribute="top" secondItem="gpf-Yr-WkF" secondAttribute="bottom" constant="100" id="alD-Kz-rtH"/>
                             <constraint firstItem="vBO-Lg-KyH" firstAttribute="top" secondItem="Lgx-hv-5ZZ" secondAttribute="top" id="anB-aY-pBC"/>
                             <constraint firstItem="Kz6-8s-McY" firstAttribute="leading" secondItem="DTX-7z-9rz" secondAttribute="trailing" id="aqL-YB-61K"/>
+                            <constraint firstItem="9nC-Iu-bYR" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="bAO-aH-JUb"/>
                             <constraint firstItem="Lgx-hv-5ZZ" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="dDN-p7-Xza"/>
                             <constraint firstItem="yPf-kS-MIz" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="dHH-RQ-ydG"/>
                             <constraint firstItem="DPg-td-00V" firstAttribute="top" secondItem="Lgx-hv-5ZZ" secondAttribute="top" id="dO3-lO-qeX"/>
@@ -598,6 +622,7 @@
                             <constraint firstItem="nQX-aU-YEW" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="oPY-m8-6cF"/>
                             <constraint firstItem="vBO-Lg-KyH" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="tqe-0u-RdG"/>
                             <constraint firstItem="DTX-7z-9rz" firstAttribute="leading" secondItem="rXm-JT-VsL" secondAttribute="leading" id="vEC-an-0LL"/>
+                            <constraint firstItem="9nC-Iu-bYR" firstAttribute="top" secondItem="42n-e5-yND" secondAttribute="bottom" constant="1" id="vER-z5-Jz5"/>
                             <constraint firstItem="Ule-gG-23C" firstAttribute="width" secondItem="DTX-7z-9rz" secondAttribute="width" id="vc7-xp-dsw"/>
                             <constraint firstAttribute="trailing" secondItem="gpf-Yr-WkF" secondAttribute="trailing" id="yJH-Yj-aU3"/>
                             <constraint firstItem="gpf-Yr-WkF" firstAttribute="centerX" secondItem="rXm-JT-VsL" secondAttribute="centerX" id="ycG-WO-SZx"/>
@@ -730,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRN-mt-Wsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2432" y="481"/>
+            <point key="canvasLocation" x="2829" y="280"/>
         </scene>
         <!--Personal View Controller-->
         <scene sceneID="QEz-6l-dB3">
@@ -1071,7 +1096,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFw-nC-sUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1974" y="400"/>
+            <point key="canvasLocation" x="2334" y="-16"/>
         </scene>
     </scenes>
     <resources>

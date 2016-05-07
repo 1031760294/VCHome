@@ -14,7 +14,7 @@
 #import "KSGuideManager.h"
 #import "Public.h"
 #import "ViewController.h"
-
+#import "ZYShareView.h"
 @interface ZiJiaViewController () <BannerDataSource,BannerDelegate,WJMenuDelegate>
 @property(strong,nonatomic)NSMutableArray *objectsForShow;
 @property(strong,nonatomic)NSString *i;
@@ -442,6 +442,74 @@
         [textView resignFirstResponder];
     }
     return YES;
+}
+//分享
+- (IBAction)shareAction:(UIBarButtonItem *)sender {
+    __weak typeof(self) weakSelf = self;
+    
+    // 创建代表每个按钮的模型
+    ZYShareItem *item0 = [ZYShareItem itemWithTitle:@"发送给朋友"
+                                               icon:@"Image-11"
+                                            handler:^{ [weakSelf itemAction:@"点击了发送给朋友"];
+                                            [Utilities popUpAlertViewWithMsg:@"分享了给朋友" andTitle:nil onView:self];}];
+    
+    ZYShareItem *item1 = [ZYShareItem itemWithTitle:@"分享到朋友圈"
+                                               icon:@"Image-15"
+                                            handler:^{ [weakSelf itemAction:@"点击了分享到朋友圈"]; [Utilities popUpAlertViewWithMsg:@"分享了给朋友圈" andTitle:nil onView:self];}];
+    
+    ZYShareItem *item2 = [ZYShareItem itemWithTitle:@"收藏"
+                                               icon:@"Image-12"
+                                            handler:^{ [weakSelf itemAction:@"点击了收藏"];
+                                            [Utilities popUpAlertViewWithMsg:@"收藏了" andTitle:nil onView:self];}];
+    
+    ZYShareItem *item3 = [ZYShareItem itemWithTitle:@"QQ空间"
+                                               icon:@"Image-9"
+                                            handler:^{ [weakSelf itemAction:@"点击了QQ空间"];
+                                            [Utilities popUpAlertViewWithMsg:@"分享到了空间" andTitle:nil onView:self];}];
+    
+    ZYShareItem *item4 = [ZYShareItem itemWithTitle:@"QQ"
+                                               icon:@"Image-14"
+                                            handler:^{ [weakSelf itemAction:@"点击了QQ"];
+                                            [Utilities popUpAlertViewWithMsg:@"分享了到QQ" andTitle:nil onView:self];}];
+    
+    ZYShareItem *item5 = [ZYShareItem itemWithTitle:@"Facebook"
+                                               icon:@"Image-7"
+                                            handler:^{ [weakSelf itemAction:@"点击了Facebook"]; }];
+    
+    ZYShareItem *item6 = [ZYShareItem itemWithTitle:@"查看公众号"
+                                               icon:@"Image-13"
+                                            handler:^{ [weakSelf itemAction:@"点击了查看公众号"]; }];
+    
+    ZYShareItem *item7 = [ZYShareItem itemWithTitle:@"复制链接"
+                                               icon:@"Image-6"
+                                            handler:^{ [weakSelf itemAction:@"点击了复制链接"];
+                                            [Utilities popUpAlertViewWithMsg:@"复制了链接" andTitle:nil onView:self];}];
+    
+    ZYShareItem *item8 = [ZYShareItem itemWithTitle:@"调整字体"
+                                               icon:@"Image-8"
+                                            handler:^{ [weakSelf itemAction:@"点击了调整字体"]; }];
+    
+    ZYShareItem *item9 = [ZYShareItem itemWithTitle:@"刷新"
+                                               icon:@"Image-10"
+                                            handler:^{ [weakSelf itemAction:@"点击了刷新"];
+                                            [Utilities popUpAlertViewWithMsg:@"刷新了" andTitle:nil onView:self];}];
+    
+    // 创建shareView
+    ZYShareView *shareView = [ZYShareView shareViewWithShareItems:@[item0, item1, item2, item3, item4, item5]
+                                                    functionItems:@[item6, item7, item8, item9]];
+    // 弹出shareView
+    [shareView show];
+
+}
+- (void)itemAction:(NSString *)title
+{
+    NSLog(@"%@", title);
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    // 白色导航栏
+    return UIStatusBarStyleLightContent;
 }
 //按return收回键盘
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
