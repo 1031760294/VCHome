@@ -20,7 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *zuqi;
 @property (weak, nonatomic) IBOutlet UILabel *fengge;
 @property (weak, nonatomic) IBOutlet UILabel *miaoshu;
-- (IBAction)pingjiaAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @property(strong,nonatomic)PFObject *object;
 

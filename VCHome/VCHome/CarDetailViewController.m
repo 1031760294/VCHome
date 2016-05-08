@@ -8,9 +8,8 @@
 
 #import "CarDetailViewController.h"
 #import "UIImageView+WebCache.h"
-#import "BWYPopUpView.h"
-#import "tipsView.h"
-@interface CarDetailViewController ()<BWYPopUpViewDelegete>
+
+@interface CarDetailViewController ()
 @property(strong,nonatomic)NSMutableArray *objectsForShow;
 @property(strong,nonatomic)NSDictionary *dict;
 
@@ -59,19 +58,5 @@
 
 
 
-
-- (IBAction)pingjiaAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    BWYPopUpView * bwyPopView = [[BWYPopUpView alloc] init];
-    bwyPopView.titleLable.text = @"XXX邀请你对他的服务进行评价";
-    bwyPopView.deleget = self;
-    [bwyPopView show];
-    
-}
-- (void)buttonClickIndex:(int)index
-{
-    tipsView * tips = [[tipsView alloc]init];
-    tips.tipsLable.text = @"评价成功,感谢您的使用!";
-    [tips show];
-}
 
 @end

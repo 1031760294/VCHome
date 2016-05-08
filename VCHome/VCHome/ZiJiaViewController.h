@@ -15,6 +15,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *citylable;
 
 @property(nonatomic, strong)NSString *cityName;
-- (IBAction)shareAction:(UIBarButtonItem *)sender;
 
 @end
