@@ -41,6 +41,11 @@
 		506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D11CC2524700BF3CA9 /* SignInViewController.m */; };
 		506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337D71CC252C800BF3CA9 /* SignUpViewController.m */; };
 		506337DB1CC2531700BF3CA9 /* ForgetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506337DA1CC2531700BF3CA9 /* ForgetPwdViewController.m */; };
+		9A187BB01CDF180800A2E988 /* ZYShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A187BA71CDF180800A2E988 /* ZYShareView.m */; };
+		9A187BB11CDF180800A2E988 /* ZYShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A187BA91CDF180800A2E988 /* ZYShareItem.m */; };
+		9A187BB21CDF180800A2E988 /* ZYShareItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A187BAB1CDF180800A2E988 /* ZYShareItemCell.m */; };
+		9A187BB31CDF180800A2E988 /* ZYShareSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A187BAD1CDF180800A2E988 /* ZYShareSheetCell.m */; };
+		9A187BB41CDF180800A2E988 /* ZYShareSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A187BAF1CDF180800A2E988 /* ZYShareSheetView.m */; };
 		9A2646BD1CCA034400AE4189 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2646BC1CCA034400AE4189 /* MapKit.framework */; };
 		9A2646C01CCA176C00AE4189 /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2646BF1CCA176C00AE4189 /* CarDetailViewController.m */; };
 		9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D3D3E1CC32F610014D6C4 /* AppAPIClient.m */; };
@@ -165,6 +170,17 @@
 		506337D71CC252C800BF3CA9 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		506337D91CC2531700BF3CA9 /* ForgetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPwdViewController.h; sourceTree = "<group>"; };
 		506337DA1CC2531700BF3CA9 /* ForgetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPwdViewController.m; sourceTree = "<group>"; };
+		9A187BA51CDF180800A2E988 /* ZYShareViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareViewDefine.h; sourceTree = "<group>"; };
+		9A187BA61CDF180800A2E988 /* ZYShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareView.h; sourceTree = "<group>"; };
+		9A187BA71CDF180800A2E988 /* ZYShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareView.m; sourceTree = "<group>"; };
+		9A187BA81CDF180800A2E988 /* ZYShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareItem.h; sourceTree = "<group>"; };
+		9A187BA91CDF180800A2E988 /* ZYShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareItem.m; sourceTree = "<group>"; };
+		9A187BAA1CDF180800A2E988 /* ZYShareItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareItemCell.h; sourceTree = "<group>"; };
+		9A187BAB1CDF180800A2E988 /* ZYShareItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareItemCell.m; sourceTree = "<group>"; };
+		9A187BAC1CDF180800A2E988 /* ZYShareSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareSheetCell.h; sourceTree = "<group>"; };
+		9A187BAD1CDF180800A2E988 /* ZYShareSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareSheetCell.m; sourceTree = "<group>"; };
+		9A187BAE1CDF180800A2E988 /* ZYShareSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYShareSheetView.h; sourceTree = "<group>"; };
+		9A187BAF1CDF180800A2E988 /* ZYShareSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYShareSheetView.m; sourceTree = "<group>"; };
 		9A2646BC1CCA034400AE4189 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9A2646BE1CCA176C00AE4189 /* CarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailViewController.h; sourceTree = "<group>"; };
 		9A2646BF1CCA176C00AE4189 /* CarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailViewController.m; sourceTree = "<group>"; };
@@ -389,6 +405,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A187BA41CDF17E200A2E988 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				9A187BA51CDF180800A2E988 /* ZYShareViewDefine.h */,
+				9A187BA61CDF180800A2E988 /* ZYShareView.h */,
+				9A187BA71CDF180800A2E988 /* ZYShareView.m */,
+				9A187BA81CDF180800A2E988 /* ZYShareItem.h */,
+				9A187BA91CDF180800A2E988 /* ZYShareItem.m */,
+				9A187BAA1CDF180800A2E988 /* ZYShareItemCell.h */,
+				9A187BAB1CDF180800A2E988 /* ZYShareItemCell.m */,
+				9A187BAC1CDF180800A2E988 /* ZYShareSheetCell.h */,
+				9A187BAD1CDF180800A2E988 /* ZYShareSheetCell.m */,
+				9A187BAE1CDF180800A2E988 /* ZYShareSheetView.h */,
+				9A187BAF1CDF180800A2E988 /* ZYShareSheetView.m */,
+			);
+			name = share;
+			sourceTree = "<group>";
+		};
 		9AB13BBE1CC20F6A001B8869 = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +520,7 @@
 		9AB13C031CC21DD8001B8869 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				9A187BA41CDF17E200A2E988 /* share */,
 				156F58971CDEC97F002B919B /* SVProgressHUD */,
 				9ADF46551CCE16040013D56D /* 意见反馈 */,
 				3CFECEFC1CC9FE5F00BD361D /* LIb */,
@@ -780,6 +815,7 @@
 				506337DB1CC2531700BF3CA9 /* ForgetPwdViewController.m in Sources */,
 				9A2646C01CCA176C00AE4189 /* CarDetailViewController.m in Sources */,
 				9A7822071CC4797900A1F79B /* ZiJiaViewController.m in Sources */,
+				9A187BB41CDF180800A2E988 /* ZYShareSheetView.m in Sources */,
 				3CFECF101CC9FEAE00BD361D /* ChineseToPinyinResource.m in Sources */,
 				9AABE8C71CCF6A12009C0F80 /* personalViewController.m in Sources */,
 				156F58A91CDECAF6002B919B /* TimerCollectionReusableView.m in Sources */,
@@ -792,7 +828,9 @@
 				9ADF466D1CCE19610013D56D /* PhotoCollectionViewCell.m in Sources */,
 				3CFECF111CC9FEAE00BD361D /* HanyuPinyinOutputFormat.m in Sources */,
 				9ADF46581CCE18120013D56D /* AboutUsViewController.m in Sources */,
+				9A187BB11CDF180800A2E988 /* ZYShareItem.m in Sources */,
 				9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */,
+				9A187BB21CDF180800A2E988 /* ZYShareItemCell.m in Sources */,
 				9AB13BD81CC20F6A001B8869 /* VCHome.xcdatamodeld in Sources */,
 				9ADF46721CCE1A3E0013D56D /* HelpViewController.m in Sources */,
 				9ADF466F1CCE19610013D56D /* UserFeedBackViewController.m in Sources */,
@@ -814,12 +852,14 @@
 				506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */,
 				9A7822011CC4780B00A1F79B /* LeftViewController.m in Sources */,
 				3CFECF121CC9FEAE00BD361D /* NSString+PinYin4Cocoa.m in Sources */,
+				9A187BB01CDF180800A2E988 /* ZYShareView.m in Sources */,
 				9AE03C291CC5D3830027801F /* ImageTableViewCell.m in Sources */,
 				9AE03C261CC5BFC50027801F /* WJDropdownMenu.m in Sources */,
 				15AF4F181CC5C65100ABC6CB /* Timer.m in Sources */,
 				15AF4F171CC5C65100ABC6CB /* Banner.m in Sources */,
 				9ADF466E1CCE19610013D56D /* PlaceholderTextView.m in Sources */,
 				9AB13C0A1CC21EB7001B8869 /* StorageMgr.m in Sources */,
+				9A187BB31CDF180800A2E988 /* ZYShareSheetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
