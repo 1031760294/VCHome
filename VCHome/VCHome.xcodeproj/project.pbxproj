@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156F589B1CDECA25002B919B /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 156F58981CDECA25002B919B /* SVProgressHUD.bundle */; };
+		156F589C1CDECA25002B919B /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 156F589A1CDECA25002B919B /* SVProgressHUD.m */; };
+		156F58A61CDECAF6002B919B /* ChooseTimeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 156F589F1CDECAF6002B919B /* ChooseTimeCollectionViewCell.m */; };
+		156F58A71CDECAF6002B919B /* ChooseTimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156F58A01CDECAF6002B919B /* ChooseTimeCollectionViewCell.xib */; };
+		156F58A81CDECAF6002B919B /* ChooseTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 156F58A21CDECAF6002B919B /* ChooseTimeViewController.m */; };
+		156F58A91CDECAF6002B919B /* TimerCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 156F58A41CDECAF6002B919B /* TimerCollectionReusableView.m */; };
+		156F58AA1CDECAF6002B919B /* TimerCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156F58A51CDECAF6002B919B /* TimerCollectionReusableView.xib */; };
 		15AF4F171CC5C65100ABC6CB /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AF4F141CC5C65100ABC6CB /* Banner.m */; };
 		15AF4F181CC5C65100ABC6CB /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AF4F161CC5C65100ABC6CB /* Timer.m */; };
 		3CFECEF01CC9FE4300BD361D /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CFECEDB1CC9FE4300BD361D /* citydict.plist */; };
@@ -95,6 +102,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		156F58981CDECA25002B919B /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		156F58991CDECA25002B919B /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		156F589A1CDECA25002B919B /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		156F589E1CDECAF6002B919B /* ChooseTimeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChooseTimeCollectionViewCell.h; path = "时间选择器/ChooseTimeCollectionViewCell.h"; sourceTree = "<group>"; };
+		156F589F1CDECAF6002B919B /* ChooseTimeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChooseTimeCollectionViewCell.m; path = "时间选择器/ChooseTimeCollectionViewCell.m"; sourceTree = "<group>"; };
+		156F58A01CDECAF6002B919B /* ChooseTimeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseTimeCollectionViewCell.xib; path = "时间选择器/ChooseTimeCollectionViewCell.xib"; sourceTree = "<group>"; };
+		156F58A11CDECAF6002B919B /* ChooseTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChooseTimeViewController.h; path = "时间选择器/ChooseTimeViewController.h"; sourceTree = "<group>"; };
+		156F58A21CDECAF6002B919B /* ChooseTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChooseTimeViewController.m; path = "时间选择器/ChooseTimeViewController.m"; sourceTree = "<group>"; };
+		156F58A31CDECAF6002B919B /* TimerCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerCollectionReusableView.h; path = "时间选择器/TimerCollectionReusableView.h"; sourceTree = "<group>"; };
+		156F58A41CDECAF6002B919B /* TimerCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerCollectionReusableView.m; path = "时间选择器/TimerCollectionReusableView.m"; sourceTree = "<group>"; };
+		156F58A51CDECAF6002B919B /* TimerCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimerCollectionReusableView.xib; path = "时间选择器/TimerCollectionReusableView.xib"; sourceTree = "<group>"; };
 		15AF4F131CC5C65100ABC6CB /* Banner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner.h; sourceTree = "<group>"; };
 		15AF4F141CC5C65100ABC6CB /* Banner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner.m; sourceTree = "<group>"; };
 		15AF4F151CC5C65100ABC6CB /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
@@ -255,6 +273,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		156F58971CDEC97F002B919B /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				156F58981CDECA25002B919B /* SVProgressHUD.bundle */,
+				156F58991CDECA25002B919B /* SVProgressHUD.h */,
+				156F589A1CDECA25002B919B /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		156F589D1CDECA68002B919B /* 时间选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				156F589E1CDECAF6002B919B /* ChooseTimeCollectionViewCell.h */,
+				156F589F1CDECAF6002B919B /* ChooseTimeCollectionViewCell.m */,
+				156F58A01CDECAF6002B919B /* ChooseTimeCollectionViewCell.xib */,
+				156F58A11CDECAF6002B919B /* ChooseTimeViewController.h */,
+				156F58A21CDECAF6002B919B /* ChooseTimeViewController.m */,
+				156F58A31CDECAF6002B919B /* TimerCollectionReusableView.h */,
+				156F58A41CDECAF6002B919B /* TimerCollectionReusableView.m */,
+				156F58A51CDECAF6002B919B /* TimerCollectionReusableView.xib */,
+			);
+			name = "时间选择器";
+			sourceTree = "<group>";
+		};
 		15AF4F121CC5C5FC00ABC6CB /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +486,7 @@
 		9AB13C031CC21DD8001B8869 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				156F58971CDEC97F002B919B /* SVProgressHUD */,
 				9ADF46551CCE16040013D56D /* 意见反馈 */,
 				3CFECEFC1CC9FE5F00BD361D /* LIb */,
 				9AE03C301CC650C10027801F /* image */,
@@ -468,6 +512,7 @@
 		9AB13C051CC21DFA001B8869 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				156F589D1CDECA68002B919B /* 时间选择器 */,
 				15AF4F121CC5C5FC00ABC6CB /* Framework */,
 				9AB13BD01CC20F6A001B8869 /* ViewController.h */,
 				9AB13BD11CC20F6A001B8869 /* ViewController.m */,
@@ -643,12 +688,15 @@
 			files = (
 				9AABE8C21CCF4C78009C0F80 /* 12.jpg in Resources */,
 				3CFECF161CC9FEAE00BD361D /* unicode_to_hanyu_pinyin.txt in Resources */,
+				156F58AA1CDECAF6002B919B /* TimerCollectionReusableView.xib in Resources */,
 				3CFECEF61CC9FE4300BD361D /* ItemViewCell.xib in Resources */,
 				3CFECEF21CC9FE4300BD361D /* CityViewCell.xib in Resources */,
 				9AABE8C11CCF4C78009C0F80 /* 11.jpg in Resources */,
 				9AABE8C31CCF4C78009C0F80 /* 13.jpg in Resources */,
+				156F58A71CDECAF6002B919B /* ChooseTimeCollectionViewCell.xib in Resources */,
 				9AABE8C41CCF4C78009C0F80 /* 14.jpg in Resources */,
 				3CFECEF41CC9FE4300BD361D /* HeadView.xib in Resources */,
+				156F589B1CDECA25002B919B /* SVProgressHUD.bundle in Resources */,
 				9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */,
 				9AB13BDD1CC20F6A001B8869 /* LaunchScreen.storyboard in Resources */,
 				3CFECEF01CC9FE4300BD361D /* citydict.plist in Resources */,
@@ -734,6 +782,8 @@
 				9A7822071CC4797900A1F79B /* ZiJiaViewController.m in Sources */,
 				3CFECF101CC9FEAE00BD361D /* ChineseToPinyinResource.m in Sources */,
 				9AABE8C71CCF6A12009C0F80 /* personalViewController.m in Sources */,
+				156F58A91CDECAF6002B919B /* TimerCollectionReusableView.m in Sources */,
+				156F589C1CDECA25002B919B /* SVProgressHUD.m in Sources */,
 				3CFECEF51CC9FE4300BD361D /* ItemViewCell.m in Sources */,
 				9A5D3D411CC32F610014D6C4 /* AppAPIClient.m in Sources */,
 				3CFECEF91CC9FE4300BD361D /* RootViewController.m in Sources */,
@@ -755,6 +805,8 @@
 				9AB13BCC1CC20F6A001B8869 /* main.m in Sources */,
 				3CFECF0F1CC9FEAE00BD361D /* ChineseInclude.m in Sources */,
 				3CFECF191CC9FEBC00BD361D /* NSMutableArray+FilterElement.m in Sources */,
+				156F58A61CDECAF6002B919B /* ChooseTimeCollectionViewCell.m in Sources */,
+				156F58A81CDECAF6002B919B /* ChooseTimeViewController.m in Sources */,
 				3CFECEF11CC9FE4300BD361D /* CityViewCell.m in Sources */,
 				3CFECEF71CC9FE4300BD361D /* NBSearchController.m in Sources */,
 				9A7822041CC4795E00A1F79B /* ZhuanCheViewController.m in Sources */,

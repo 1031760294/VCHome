@@ -8,10 +8,12 @@
 
 #import "CarDetailViewController.h"
 #import "UIImageView+WebCache.h"
-
+#import "ChooseTimeViewController.h"
 @interface CarDetailViewController ()
 @property(strong,nonatomic)NSMutableArray *objectsForShow;
 @property(strong,nonatomic)NSDictionary *dict;
+@property (weak, nonatomic) IBOutlet UILabel *dataLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end
 
@@ -36,6 +38,28 @@
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];
     //结合SDWebImage通过图片路径来实现异步加载和缓存（本案中加载到一个图片视图上）
     [_imageTV sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"photos"]];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+- (IBAction)showPick:(id)sender
+{
+    ChooseTimeViewController * vc =[ChooseTimeViewController new];
+    
+    __weak typeof(self)weekSelf = self;
+    
+    [vc backDate:^(NSArray *goDate, NSArray *backDate) {
+        
+        //        weekSelf.dataLabel.text = [NSString stringWithFormat:@"%@ : %@",[goDate componentsJoinedByString:@"-"],[backDate componentsJoinedByString:@"-"]];
+        weekSelf.dataLabel.text = [NSString stringWithFormat:@"租车日期:%@",[goDate componentsJoinedByString:@"-"]];
+        weekSelf.dateLabel.text = [NSString stringWithFormat:@"还车日期:%@",[backDate componentsJoinedByString:@"-"]];
+    }];
+    
+    
+    UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:^{
+        
+        
+    }];
+
 
 }
 
