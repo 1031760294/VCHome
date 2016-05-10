@@ -60,6 +60,9 @@
 		9AABE8C31CCF4C78009C0F80 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8BF1CCF4C78009C0F80 /* 13.jpg */; };
 		9AABE8C41CCF4C78009C0F80 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8C01CCF4C78009C0F80 /* 14.jpg */; };
 		9AABE8C71CCF6A12009C0F80 /* personalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AABE8C61CCF6A12009C0F80 /* personalViewController.m */; };
+		9AACA8761CE1BC090062099F /* TiJiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AACA8751CE1BC090062099F /* TiJiaoViewController.m */; };
+		9AACA8791CE1FD8E0062099F /* shoucangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AACA8781CE1FD8E0062099F /* shoucangTableViewCell.m */; };
+		9AACA87C1CE1FDE00062099F /* shoucangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AACA87B1CE1FDE00062099F /* shoucangViewController.m */; };
 		9AB13BCC1CC20F6A001B8869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BCB1CC20F6A001B8869 /* main.m */; };
 		9AB13BCF1CC20F6A001B8869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BCE1CC20F6A001B8869 /* AppDelegate.m */; };
 		9AB13BD21CC20F6A001B8869 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB13BD11CC20F6A001B8869 /* ViewController.m */; };
@@ -203,6 +206,12 @@
 		9AABE8C01CCF4C78009C0F80 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
 		9AABE8C51CCF6A12009C0F80 /* personalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalViewController.h; sourceTree = "<group>"; };
 		9AABE8C61CCF6A12009C0F80 /* personalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalViewController.m; sourceTree = "<group>"; };
+		9AACA8741CE1BC090062099F /* TiJiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiJiaoViewController.h; sourceTree = "<group>"; };
+		9AACA8751CE1BC090062099F /* TiJiaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiJiaoViewController.m; sourceTree = "<group>"; };
+		9AACA8771CE1FD8E0062099F /* shoucangTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoucangTableViewCell.h; sourceTree = "<group>"; };
+		9AACA8781CE1FD8E0062099F /* shoucangTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoucangTableViewCell.m; sourceTree = "<group>"; };
+		9AACA87A1CE1FDE00062099F /* shoucangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoucangViewController.h; sourceTree = "<group>"; };
+		9AACA87B1CE1FDE00062099F /* shoucangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoucangViewController.m; sourceTree = "<group>"; };
 		9AB13BC71CC20F6A001B8869 /* VCHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB13BCB1CC20F6A001B8869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AB13BCD1CC20F6A001B8869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -573,6 +582,12 @@
 				9ADF46711CCE1A3E0013D56D /* HelpViewController.m */,
 				9AABE8C51CCF6A12009C0F80 /* personalViewController.h */,
 				9AABE8C61CCF6A12009C0F80 /* personalViewController.m */,
+				9AACA8741CE1BC090062099F /* TiJiaoViewController.h */,
+				9AACA8751CE1BC090062099F /* TiJiaoViewController.m */,
+				9AACA8771CE1FD8E0062099F /* shoucangTableViewCell.h */,
+				9AACA8781CE1FD8E0062099F /* shoucangTableViewCell.m */,
+				9AACA87A1CE1FDE00062099F /* shoucangViewController.h */,
+				9AACA87B1CE1FDE00062099F /* shoucangViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -825,6 +840,7 @@
 				3CFECEF91CC9FE4300BD361D /* RootViewController.m in Sources */,
 				506337D21CC2524700BF3CA9 /* SignInViewController.m in Sources */,
 				9AB13C0B1CC21EB7001B8869 /* Utilities.m in Sources */,
+				9AACA8791CE1FD8E0062099F /* shoucangTableViewCell.m in Sources */,
 				9ADF466D1CCE19610013D56D /* PhotoCollectionViewCell.m in Sources */,
 				3CFECF111CC9FEAE00BD361D /* HanyuPinyinOutputFormat.m in Sources */,
 				9ADF46581CCE18120013D56D /* AboutUsViewController.m in Sources */,
@@ -849,6 +865,8 @@
 				3CFECEF71CC9FE4300BD361D /* NBSearchController.m in Sources */,
 				9A7822041CC4795E00A1F79B /* ZhuanCheViewController.m in Sources */,
 				3CFECEF81CC9FE4300BD361D /* NBSearchResultController.m in Sources */,
+				9AACA87C1CE1FDE00062099F /* shoucangViewController.m in Sources */,
+				9AACA8761CE1BC090062099F /* TiJiaoViewController.m in Sources */,
 				506337D81CC252C800BF3CA9 /* SignUpViewController.m in Sources */,
 				9A7822011CC4780B00A1F79B /* LeftViewController.m in Sources */,
 				3CFECF121CC9FEAE00BD361D /* NSString+PinYin4Cocoa.m in Sources */,

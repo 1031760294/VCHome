@@ -183,6 +183,10 @@
     [self signInWithUsername:username andPassword:password];
 }
 
+- (IBAction)backAction:(UIButton *)sender forEvent:(UIEvent *)event {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 //按return收回键盘
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];

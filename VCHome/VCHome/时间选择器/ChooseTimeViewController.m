@@ -10,7 +10,6 @@
 #import "ChooseTimeCollectionViewCell.h"
 #import "TimerCollectionReusableView.h"
 #import "SVProgressHUD.h"
-
 static NSString * const reuseIdentifier = @"ChooseTimeCell";
 static NSString * const headerIdentifier = @"headerIdentifier";
 
@@ -382,8 +381,8 @@ static NSString * const headerIdentifier = @"headerIdentifier";
 #pragma mark --- 提示框
 - (void)showAlertController
 {
-    
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"是否选择租车日期?" preferredStyle:UIAlertControllerStyleAlert];
+   
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"您选择了取车日期在选择还车日期" preferredStyle:UIAlertControllerStyleAlert];
     
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
@@ -409,7 +408,7 @@ static NSString * const headerIdentifier = @"headerIdentifier";
 - (void)backAlertController
 {
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"是否选择还车时间?" preferredStyle:UIAlertControllerStyleAlert];
+   UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"您选择了还车日期请您返回确定并提交" preferredStyle:UIAlertControllerStyleAlert];
     
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
