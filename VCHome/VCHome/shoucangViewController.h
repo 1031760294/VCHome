@@ -10,4 +10,5 @@
 
 @interface shoucangViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)backAction:(UIBarButtonItem *)sender;
 @end

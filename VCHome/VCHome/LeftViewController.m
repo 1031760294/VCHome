@@ -50,7 +50,7 @@
         
     }else{
         [_imageBtn setBackgroundImage:[UIImage imageNamed:@"Image-3"] forState:UIControlStateNormal];
-                _nickname.text = @"";
+                _nickname.text = @"未登录";
     }
     
     
