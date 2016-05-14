@@ -44,7 +44,7 @@ static NSString *identifier = @"Cell";
     
     button.hidden = YES;
     [button setFrame:CGRectMake(0, 0, 200, 44)];
-    [button setTitle:@"Next" forState:UIControlStateNormal];
+    [button setTitle:@"开始" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [button.layer setCornerRadius:5];
     [button.layer setBorderColor:[UIColor grayColor].CGColor];

@@ -15,12 +15,15 @@
 #import "Public.h"
 #import "ViewController.h"
 #import "ZYShareView.h"
-@interface ZiJiaViewController () <BannerDataSource,BannerDelegate,WJMenuDelegate>
+@interface ZiJiaViewController () <BannerDataSource,BannerDelegate,WJMenuDelegate>{
+    BOOL isLoading;
+}
 @property(strong,nonatomic)NSMutableArray *objectsForShow;
 @property(strong,nonatomic)NSString *i;
 @property(strong,nonatomic)NSString *j;
 @property(strong,nonatomic)NSString *k;
 @property(strong, nonatomic)NSString *objId;
+@property (strong, nonatomic) UIActivityIndicatorView *aiv;
 
 @end
 
@@ -105,15 +108,44 @@
     
     //第一次进入的引导动画
     
-//    NSMutableArray *paths = [NSMutableArray new];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"11" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"12" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"13" ofType:@"jpg"]];
-//    [paths addObject:[[NSBundle mainBundle] pathForResource:@"14" ofType:@"jpg"]];
-//    [[KSGuideManager shared] showGuideViewWithImages:paths];
-//    
+    NSMutableArray *paths = [NSMutableArray new];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"11" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"15" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"16" ofType:@"jpg"]];
+    [paths addObject:[[NSBundle mainBundle] pathForResource:@"17" ofType:@"jpg"]];
+    [[KSGuideManager shared] showGuideViewWithImages:paths];
+    
+    
+//    //下拉刷新
+//    UIRefreshControl *rc = [[UIRefreshControl alloc] init];
+//    rc.tag = 1001;
+//    rc.tintColor = [UIColor darkGrayColor];
+//    [rc addTarget:self action:@selector(canToRequestData) forControlEvents:UIControlEventValueChanged];
+//    [_tableView addSubview:rc];
+
 
 }
+//- (void)refreshData {
+//    
+//    isLoading = NO;//刚来到页面进行数据初始化时将“是否正在加载数据”指针设为否
+//    
+//    //在根视图上创建一朵菊花，并转动
+//    _aiv = [Utilities getCoverOnView:self.view];
+//    [self canToRequestData];
+//    
+//    
+//}
+//
+//-(void)canToRequestData{
+//    //只有当加载任务不在进行时，我们才该同意一个新的加载任务
+//    if (!isLoading ) {
+//        //当开始执行下拉刷新（包括刚来到页面执行的第一次请求）时将“是否正在加载数据”指针设为是
+//        
+//        isLoading = YES;
+//        
+//        [self requestData];
+//    }
+//}
 
 //  点击图片
 - (void)bannerView:(Banner *)bannerView didSelectImageAtIndex:(NSUInteger)index
@@ -319,11 +351,16 @@
     UIActivityIndicatorView *avi = [Utilities getCoverOnView:self.view];
     //查询语句
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+//        isLoading = NO;
+//        //根据下标找到刷新器
+//        UIRefreshControl *rc = (UIRefreshControl *)[_tableView viewWithTag:1001];
+//        [rc endRefreshing];
         //让导航条恢复交互能力
         self.navigationController.view.userInteractionEnabled = YES;
         //停止菊花动画
         [avi stopAnimating];
         if (!error) {
+            _objectsForShow = nil;
             _objectsForShow = [NSMutableArray arrayWithArray:objects];
             NSLog(@"objects = %@",_objectsForShow[0]);
             [_tableView reloadData];

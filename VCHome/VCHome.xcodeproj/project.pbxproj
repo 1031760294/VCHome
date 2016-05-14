@@ -55,10 +55,10 @@
 		9A7822011CC4780B00A1F79B /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7822001CC4780B00A1F79B /* LeftViewController.m */; };
 		9A7822041CC4795E00A1F79B /* ZhuanCheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */; };
 		9A7822071CC4797900A1F79B /* ZiJiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7822061CC4797900A1F79B /* ZiJiaViewController.m */; };
-		9AABE8C11CCF4C78009C0F80 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8BD1CCF4C78009C0F80 /* 11.jpg */; };
-		9AABE8C21CCF4C78009C0F80 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8BE1CCF4C78009C0F80 /* 12.jpg */; };
-		9AABE8C31CCF4C78009C0F80 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8BF1CCF4C78009C0F80 /* 13.jpg */; };
-		9AABE8C41CCF4C78009C0F80 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AABE8C01CCF4C78009C0F80 /* 14.jpg */; };
+		9A8DD8B71CE723CE00303BB9 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DD8B61CE723CE00303BB9 /* 11.jpg */; };
+		9A8DD8B91CE723F500303BB9 /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DD8B81CE723F500303BB9 /* 15.jpg */; };
+		9A8DD8BB1CE7241400303BB9 /* 16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DD8BA1CE7241400303BB9 /* 16.jpg */; };
+		9A8DD8BD1CE7242800303BB9 /* 17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DD8BC1CE7242800303BB9 /* 17.jpg */; };
 		9AABE8C71CCF6A12009C0F80 /* personalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AABE8C61CCF6A12009C0F80 /* personalViewController.m */; };
 		9AACA8761CE1BC090062099F /* TiJiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AACA8751CE1BC090062099F /* TiJiaoViewController.m */; };
 		9AACA8791CE1FD8E0062099F /* shoucangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AACA8781CE1FD8E0062099F /* shoucangTableViewCell.m */; };
@@ -200,10 +200,10 @@
 		9A7822031CC4795E00A1F79B /* ZhuanCheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanCheViewController.m; sourceTree = "<group>"; };
 		9A7822051CC4797900A1F79B /* ZiJiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiJiaViewController.h; sourceTree = "<group>"; };
 		9A7822061CC4797900A1F79B /* ZiJiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiJiaViewController.m; sourceTree = "<group>"; };
-		9AABE8BD1CCF4C78009C0F80 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
-		9AABE8BE1CCF4C78009C0F80 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
-		9AABE8BF1CCF4C78009C0F80 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
-		9AABE8C01CCF4C78009C0F80 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		9A8DD8B61CE723CE00303BB9 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		9A8DD8B81CE723F500303BB9 /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
+		9A8DD8BA1CE7241400303BB9 /* 16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 16.jpg; sourceTree = "<group>"; };
+		9A8DD8BC1CE7242800303BB9 /* 17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 17.jpg; sourceTree = "<group>"; };
 		9AABE8C51CCF6A12009C0F80 /* personalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalViewController.h; sourceTree = "<group>"; };
 		9AABE8C61CCF6A12009C0F80 /* personalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalViewController.m; sourceTree = "<group>"; };
 		9AACA8741CE1BC090062099F /* TiJiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiJiaoViewController.h; sourceTree = "<group>"; };
@@ -610,13 +610,13 @@
 		9AE03C301CC650C10027801F /* image */ = {
 			isa = PBXGroup;
 			children = (
+				9A8DD8BC1CE7242800303BB9 /* 17.jpg */,
+				9A8DD8BA1CE7241400303BB9 /* 16.jpg */,
+				9A8DD8B61CE723CE00303BB9 /* 11.jpg */,
+				9A8DD8B81CE723F500303BB9 /* 15.jpg */,
 				9ADF46531CCE15DC0013D56D /* HelpViewController.m */,
 				9AE03C2E1CC64DAA0027801F /* KSGuideManager.m */,
 				9AE03C2D1CC64DA40027801F /* KSGuideManager.h */,
-				9AABE8BD1CCF4C78009C0F80 /* 11.jpg */,
-				9AABE8BE1CCF4C78009C0F80 /* 12.jpg */,
-				9AABE8BF1CCF4C78009C0F80 /* 13.jpg */,
-				9AABE8C01CCF4C78009C0F80 /* 14.jpg */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -736,15 +736,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AABE8C21CCF4C78009C0F80 /* 12.jpg in Resources */,
+				9A8DD8BD1CE7242800303BB9 /* 17.jpg in Resources */,
+				9A8DD8B91CE723F500303BB9 /* 15.jpg in Resources */,
 				3CFECF161CC9FEAE00BD361D /* unicode_to_hanyu_pinyin.txt in Resources */,
 				156F58AA1CDECAF6002B919B /* TimerCollectionReusableView.xib in Resources */,
 				3CFECEF61CC9FE4300BD361D /* ItemViewCell.xib in Resources */,
+				9A8DD8BB1CE7241400303BB9 /* 16.jpg in Resources */,
+				9A8DD8B71CE723CE00303BB9 /* 11.jpg in Resources */,
 				3CFECEF21CC9FE4300BD361D /* CityViewCell.xib in Resources */,
-				9AABE8C11CCF4C78009C0F80 /* 11.jpg in Resources */,
-				9AABE8C31CCF4C78009C0F80 /* 13.jpg in Resources */,
 				156F58A71CDECAF6002B919B /* ChooseTimeCollectionViewCell.xib in Resources */,
-				9AABE8C41CCF4C78009C0F80 /* 14.jpg in Resources */,
 				3CFECEF41CC9FE4300BD361D /* HeadView.xib in Resources */,
 				156F589B1CDECA25002B919B /* SVProgressHUD.bundle in Resources */,
 				9A5D3D441CC34AE10014D6C4 /* Main.storyboard in Resources */,
